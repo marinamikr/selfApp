@@ -19,6 +19,8 @@
 		405B385323A8E59100333CB8 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B385223A8E59100333CB8 /* RealmModel.swift */; };
 		40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */; };
 		40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */; };
+		40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BD97C523CDD70F005F45FB /* yazurushi.png */; };
+		40BD97C823CDDEAB005F45FB /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD97C723CDDEAB005F45FB /* StoryViewController.swift */; };
 		40FD48EB23B2E206005BFDB8 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD48EA23B2E206005BFDB8 /* QRViewController.swift */; };
 		4476E7D82034C837A07D735E /* Pods_selfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17B11764F580E034679DBC /* Pods_selfTests.framework */; };
 		59B32ED03CB5BB381B1CD7C4 /* Pods_self.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1854CD5B63428161F73D38 /* Pods_self.framework */; };
@@ -63,6 +65,8 @@
 		405B385223A8E59100333CB8 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
+		40BD97C523CDD70F005F45FB /* yazurushi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yazurushi.png; sourceTree = "<group>"; };
+		40BD97C723CDDEAB005F45FB /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		40FD48EA23B2E206005BFDB8 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		4B98AFCEA6F01DC37ED647C3 /* Pods-selfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfTests.release.xcconfig"; path = "Target Support Files/Pods-selfTests/Pods-selfTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D6552C0DF8BB29005A3F99E /* Pods-self.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-self.debug.xcconfig"; path = "Target Support Files/Pods-self/Pods-self.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				405B382223A8DA1800333CB8 /* AppDelegate.swift */,
 				405B382423A8DA1800333CB8 /* SceneDelegate.swift */,
 				405B382623A8DA1800333CB8 /* ViewController.swift */,
+				40BD97C723CDDEAB005F45FB /* StoryViewController.swift */,
 				405B382823A8DA1800333CB8 /* Main.storyboard */,
 				405B382B23A8DA1A00333CB8 /* Assets.xcassets */,
 				405B382D23A8DA1A00333CB8 /* LaunchScreen.storyboard */,
@@ -157,6 +162,7 @@
 				40FD48EA23B2E206005BFDB8 /* QRViewController.swift */,
 				40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */,
 				40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */,
+				40BD97C523CDD70F005F45FB /* yazurushi.png */,
 			);
 			path = self;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			files = (
 				405B382F23A8DA1A00333CB8 /* LaunchScreen.storyboard in Resources */,
 				405B382C23A8DA1A00333CB8 /* Assets.xcassets in Resources */,
+				40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */,
 				405B382A23A8DA1800333CB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +430,7 @@
 				405B382723A8DA1800333CB8 /* ViewController.swift in Sources */,
 				40FD48EB23B2E206005BFDB8 /* QRViewController.swift in Sources */,
 				405B385323A8E59100333CB8 /* RealmModel.swift in Sources */,
+				40BD97C823CDDEAB005F45FB /* StoryViewController.swift in Sources */,
 				405B382323A8DA1800333CB8 /* AppDelegate.swift in Sources */,
 				405B382523A8DA1800333CB8 /* SceneDelegate.swift in Sources */,
 				40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */,

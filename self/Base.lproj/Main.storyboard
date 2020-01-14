@@ -52,7 +52,6 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saveButton" destination="ZZ5-ds-0gu" eventType="touchUpInside" id="zrp-Pu-FAf"/>
-                                    <segue destination="vIa-Ho-GTL" kind="show" id="oLb-FX-ePx"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Db8-Qn-c2e">
@@ -72,6 +71,7 @@
                         <outlet property="textField2" destination="80v-GI-tCk" id="SKh-Un-XNS"/>
                         <outlet property="textField3" destination="5ZQ-RK-Acr" id="x3c-LW-NQO"/>
                         <outlet property="textField4" destination="Db8-Qn-c2e" id="fex-zh-brE"/>
+                        <segue destination="vIa-Ho-GTL" kind="show" identifier="toRoulettoView" id="vVF-TJ-8Rg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfR-h3-ABx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-wr-Ib4">
-                                <rect key="frame" x="49" y="96" width="114" height="56"/>
+                                <rect key="frame" x="49" y="97" width="114" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -148,6 +148,7 @@
                                 <state key="normal" title="start"/>
                                 <connections>
                                     <action selector="againButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="KFU-Sw-ZOq"/>
+                                    <action selector="startButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="ifT-Lx-RKP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmV-yw-s6L">
@@ -172,11 +173,40 @@
                         <outlet property="label2" destination="FhG-Gu-Au2" id="zNJ-3c-faZ"/>
                         <outlet property="label3" destination="EAL-ov-K6l" id="5D8-Te-mAO"/>
                         <outlet property="label4" destination="hXp-8M-mcK" id="r6Y-JD-Mdu"/>
+                        <segue destination="Yuc-Fq-jaL" kind="show" identifier="toStoryViewController" id="t8z-f7-tNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTK-6I-WPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="221.67487684729065"/>
+            <point key="canvasLocation" x="1308" y="222"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="I3q-gz-pFF">
+            <objects>
+                <viewController id="Yuc-Fq-jaL" customClass="StoryViewController" customModule="self" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Esz-IK-bbz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rF1-9R-cu7">
+                                <rect key="frame" x="122" y="131" width="130" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hf8-vl-15D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WiN-j2-a2Q"/>
+                    <connections>
+                        <outlet property="label" destination="rF1-9R-cu7" id="9BV-ZA-J6m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxj-gD-dCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2085.5999999999999" y="233.49753694581281"/>
         </scene>
         <!--設定-->
         <scene sceneID="0Hj-is-kOP">
