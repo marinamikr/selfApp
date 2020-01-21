@@ -49,10 +49,7 @@ class SelectCharacterViewController: UIViewController {
         try! realm.write() {
             realm.add(saveData4)
         }
-        
-        print(saveData1.text)
-        print(saveData2.text)
-        print(saveData3.text)
+
 
          self.performSegue(withIdentifier: "toRoulettoView", sender: nil)
         

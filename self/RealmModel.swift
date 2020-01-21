@@ -13,4 +13,9 @@ class RealmModel: Object {
     @objc dynamic var date: String!
     @objc dynamic var text: String!
     @objc dynamic var image: NSData!
+    @objc dynamic var itsu: String = ""
+    @objc dynamic var dokode: String = ""
+    @objc dynamic var dareto: String = ""
+    @objc dynamic var nanishita: String = ""
+    @objc dynamic var sonota: String = ""
 }

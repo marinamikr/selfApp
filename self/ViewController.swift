@@ -27,14 +27,30 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         realm = try! Realm()
         realmModelArray = realm.objects(RealmModel.self)
-        label1.text = realmModelArray[0].text
-        label2.text = realmModelArray[1].text
-        label3.text = realmModelArray[2].text
-        label4.text = realmModelArray[3].text
-        label5.text = realmModelArray[4].text
-        label6.text = realmModelArray[5].text
-
-        
+        for i in 0..<realmModelArray.count {
+            switch i {
+            case 0:
+                label1.text = realmModelArray[i].text
+                break
+            case 1:
+                label2.text = realmModelArray[i].text
+                break
+            case 2:
+                label3.text = realmModelArray[i].text
+                break
+            case 3:
+                label4.text = realmModelArray[i].text
+                break
+            case 4:
+                label5.text = realmModelArray[i].text
+                break
+            case 5:
+                label6.text = realmModelArray[i].text
+                break
+            default: break
+                
+            }
+        }
     }
     
     @IBAction func addButton() {

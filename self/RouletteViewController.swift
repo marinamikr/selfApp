@@ -27,6 +27,10 @@ class RouletteViewController: UIViewController {
     
     var number: Int!
     var chooseLabel: String!
+    var otherLabel1: String!
+    var otherLabel2: String!
+    var otherLabel3: String!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,15 +64,27 @@ class RouletteViewController: UIViewController {
     @IBAction func saveButton() {
         if image1.image != nil {
             chooseLabel = label1.text
+            otherLabel1 = label2.text
+            otherLabel2 = label3.text
+            otherLabel3 = label4.text
         } else if image2.image != nil {
             chooseLabel = label2.text
+            otherLabel1 = label1.text
+            otherLabel2 = label3.text
+            otherLabel3 = label4.text
         } else if image3.image !=  nil {
             chooseLabel = label3.text
+            otherLabel1 = label1.text
+            otherLabel2 = label2.text
+            otherLabel3 = label4.text
         } else {
             chooseLabel = label4.text
+            otherLabel1 = label1.text
+            otherLabel2 = label2.text
+            otherLabel3 = label3.text
         }
         
-        self.performSegue(withIdentifier: "toRoulettoView", sender: nil)
+        self.performSegue(withIdentifier: "toStoryViewController", sender: nil)
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -77,7 +93,10 @@ class RouletteViewController: UIViewController {
             
             let nextView = segue.destination as! StoryViewController
             
-            nextView.text = chooseLabel
+            nextView.text1 = chooseLabel
+            nextView.text2 = otherLabel1
+            nextView.text3 = otherLabel2
+            nextView.text4 = otherLabel3
         }
     }
     @IBAction func startButton(){
