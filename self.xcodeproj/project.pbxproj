@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2A8B191CAE94F9CBE402658F /* Pods_self_selfUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6341E592CE85E7C826C342 /* Pods_self_selfUITests.framework */; };
+		4002C9E623E0357E0093666B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4002C9E523E0357E0093666B /* GoogleService-Info.plist */; };
+		4020983D23E0394A0030A2E8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020983C23E0394A0030A2E8 /* Util.swift */; };
+		40544EC823E048D3005DE7B9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40544EC723E048D3005DE7B9 /* Character.swift */; };
 		405B382323A8DA1800333CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B382223A8DA1800333CB8 /* AppDelegate.swift */; };
 		405B382523A8DA1800333CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B382423A8DA1800333CB8 /* SceneDelegate.swift */; };
 		405B382723A8DA1800333CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B382623A8DA1800333CB8 /* ViewController.swift */; };
@@ -19,6 +22,10 @@
 		405B385323A8E59100333CB8 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B385223A8E59100333CB8 /* RealmModel.swift */; };
 		40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */; };
 		40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */; };
+		40BD044823E97236009F8644 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD044723E97236009F8644 /* CameraViewController.swift */; };
+		40BD044A23E980F2009F8644 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD044923E980F2009F8644 /* IntroductionViewController.swift */; };
+		40BD045423E987A7009F8644 /* BusinessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD045223E987A7009F8644 /* BusinessCard.swift */; };
+		40BD045523E987A7009F8644 /* BusinessCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40BD045323E987A7009F8644 /* BusinessCard.xib */; };
 		40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BD97C523CDD70F005F45FB /* yazurushi.png */; };
 		40BD97C823CDDEAB005F45FB /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD97C723CDDEAB005F45FB /* StoryViewController.swift */; };
 		40FD48EB23B2E206005BFDB8 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD48EA23B2E206005BFDB8 /* QRViewController.swift */; };
@@ -48,6 +55,9 @@
 		18EE9D436F6830EBF3A90306 /* Pods-selfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfTests.debug.xcconfig"; path = "Target Support Files/Pods-selfTests/Pods-selfTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2621E8AEF8E21C3C29E4381E /* Pods-self.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-self.release.xcconfig"; path = "Target Support Files/Pods-self/Pods-self.release.xcconfig"; sourceTree = "<group>"; };
 		3F1854CD5B63428161F73D38 /* Pods_self.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_self.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4002C9E523E0357E0093666B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4020983C23E0394A0030A2E8 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		40544EC723E048D3005DE7B9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		405B381F23A8DA1800333CB8 /* self.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = self.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405B382223A8DA1800333CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405B382423A8DA1800333CB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +75,10 @@
 		405B385223A8E59100333CB8 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
+		40BD044723E97236009F8644 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		40BD044923E980F2009F8644 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		40BD045223E987A7009F8644 /* BusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCard.swift; sourceTree = "<group>"; };
+		40BD045323E987A7009F8644 /* BusinessCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCard.xib; sourceTree = "<group>"; };
 		40BD97C523CDD70F005F45FB /* yazurushi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yazurushi.png; sourceTree = "<group>"; };
 		40BD97C723CDDEAB005F45FB /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		40FD48EA23B2E206005BFDB8 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +140,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4020983B23E0390B0030A2E8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				405B382623A8DA1800333CB8 /* ViewController.swift */,
+				40BD97C723CDDEAB005F45FB /* StoryViewController.swift */,
+				40FD48EA23B2E206005BFDB8 /* QRViewController.swift */,
+				40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */,
+				40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */,
+				40BD044723E97236009F8644 /* CameraViewController.swift */,
+				40BD044923E980F2009F8644 /* IntroductionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		40544EC623E048AE005DE7B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40544EC723E048D3005DE7B9 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		405B381623A8DA1800333CB8 = {
 			isa = PBXGroup;
 			children = (
@@ -150,19 +186,19 @@
 		405B382123A8DA1800333CB8 /* self */ = {
 			isa = PBXGroup;
 			children = (
+				40BD044B23E986E0009F8644 /* CustomView */,
+				40544EC623E048AE005DE7B9 /* Model */,
+				4020983B23E0390B0030A2E8 /* ViewController */,
 				405B382223A8DA1800333CB8 /* AppDelegate.swift */,
 				405B382423A8DA1800333CB8 /* SceneDelegate.swift */,
-				405B382623A8DA1800333CB8 /* ViewController.swift */,
-				40BD97C723CDDEAB005F45FB /* StoryViewController.swift */,
 				405B382823A8DA1800333CB8 /* Main.storyboard */,
 				405B382B23A8DA1A00333CB8 /* Assets.xcassets */,
 				405B382D23A8DA1A00333CB8 /* LaunchScreen.storyboard */,
 				405B383023A8DA1A00333CB8 /* Info.plist */,
 				405B385223A8E59100333CB8 /* RealmModel.swift */,
-				40FD48EA23B2E206005BFDB8 /* QRViewController.swift */,
-				40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */,
-				40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */,
 				40BD97C523CDD70F005F45FB /* yazurushi.png */,
+				4002C9E523E0357E0093666B /* GoogleService-Info.plist */,
+				4020983C23E0394A0030A2E8 /* Util.swift */,
 			);
 			path = self;
 			sourceTree = "<group>";
@@ -184,6 +220,15 @@
 				405B384623A8DA1A00333CB8 /* Info.plist */,
 			);
 			path = selfUITests;
+			sourceTree = "<group>";
+		};
+		40BD044B23E986E0009F8644 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				40BD045223E987A7009F8644 /* BusinessCard.swift */,
+				40BD045323E987A7009F8644 /* BusinessCard.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +342,10 @@
 			files = (
 				405B382F23A8DA1A00333CB8 /* LaunchScreen.storyboard in Resources */,
 				405B382C23A8DA1A00333CB8 /* Assets.xcassets in Resources */,
+				4002C9E623E0357E0093666B /* GoogleService-Info.plist in Resources */,
 				40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */,
 				405B382A23A8DA1800333CB8 /* Main.storyboard in Resources */,
+				40BD045523E987A7009F8644 /* BusinessCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +473,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BD044823E97236009F8644 /* CameraViewController.swift in Sources */,
 				40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */,
+				4020983D23E0394A0030A2E8 /* Util.swift in Sources */,
 				405B382723A8DA1800333CB8 /* ViewController.swift in Sources */,
+				40BD044A23E980F2009F8644 /* IntroductionViewController.swift in Sources */,
 				40FD48EB23B2E206005BFDB8 /* QRViewController.swift in Sources */,
 				405B385323A8E59100333CB8 /* RealmModel.swift in Sources */,
+				40BD045423E987A7009F8644 /* BusinessCard.swift in Sources */,
 				40BD97C823CDDEAB005F45FB /* StoryViewController.swift in Sources */,
 				405B382323A8DA1800333CB8 /* AppDelegate.swift in Sources */,
+				40544EC823E048D3005DE7B9 /* Character.swift in Sources */,
 				405B382523A8DA1800333CB8 /* SceneDelegate.swift in Sources */,
 				40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */,
 			);
@@ -608,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7EPKJW7KG;
 				INFOPLIST_FILE = self/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,6 +679,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7EPKJW7KG;
 				INFOPLIST_FILE = self/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -18,4 +18,11 @@ target 'self' do
     # Pods for testing
   end
 
+
+use_frameworks!
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+
+
+
 end
