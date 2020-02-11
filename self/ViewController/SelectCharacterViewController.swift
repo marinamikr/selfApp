@@ -14,6 +14,7 @@ class SelectCharacterViewController: UIViewController {
     var realm :Realm!
     
     var id = ""
+    var name = ""
     
     @IBOutlet var nameLabel:UILabel!
     @IBOutlet var textField1: UITextField!
@@ -24,8 +25,14 @@ class SelectCharacterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         realm = try! Realm()
-        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(name)
+        print(id)
+        nameLabel.text = name
     }
     
     @IBAction func saveButton() {
@@ -65,7 +72,7 @@ class SelectCharacterViewController: UIViewController {
             nextView.text2 = textField2.text!
             nextView.text3 = textField3.text!
             nextView.text4 = textField4.text!
-
+            nextView.id = id
            }
        }
 }

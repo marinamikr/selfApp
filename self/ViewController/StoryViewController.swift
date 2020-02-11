@@ -28,6 +28,7 @@ class StoryViewController: UIViewController {
     var text2 = ""
     var text3 = ""
     var text4 = ""
+    var id = ""
     
     
     override func viewDidLoad() {
@@ -80,11 +81,10 @@ class StoryViewController: UIViewController {
         let data2 = ["key": text2,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
          let data3 = ["key": text3,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
          let data4 = ["key": text4,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
-        DBRef.child("userData").child(Util.getUUID()).childByAutoId().setValue(data)
-        
-        DBRef.child("userData").child(Util.getUUID()).childByAutoId().setValue(data2)
-        DBRef.child("userData").child(Util.getUUID()).childByAutoId().setValue(data3)
-        DBRef.child("userData").child(Util.getUUID()).childByAutoId().setValue(data4)
+        DBRef.child("userData").child(id).childByAutoId().setValue(data)
+        DBRef.child("userData").child(id).childByAutoId().setValue(data2)
+        DBRef.child("userData").child(id).childByAutoId().setValue(data3)
+        DBRef.child("userData").child(id).childByAutoId().setValue(data4)
 
     }
     

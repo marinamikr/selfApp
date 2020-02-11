@@ -16,7 +16,8 @@ class BusinessCard: UIView {
     @IBOutlet var label4:UILabel!
     @IBOutlet var label5:UILabel!
     @IBOutlet var label6:UILabel!
-    
+    @IBOutlet var backView: UIView!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()

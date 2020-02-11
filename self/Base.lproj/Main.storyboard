@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F5a-NG-Vhc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F5a-NG-Vhc">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -306,19 +306,11 @@
                     <view key="view" contentMode="scaleToFill" id="7qg-m4-Epl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-C2-Vfm">
-                                <rect key="frame" x="0.0" y="-14" width="375" height="811"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sNx-wd-8Ji"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="かく" id="rQb-9G-54c"/>
                     <connections>
-                        <outlet property="previewView" destination="cLI-C2-Vfm" id="STi-Ob-WA3"/>
                         <segue destination="ZZ5-ds-0gu" kind="show" identifier="toSelectCharacterViewController" id="aWs-C2-DaP"/>
                     </connections>
                 </viewController>
@@ -329,18 +321,28 @@
         <!--設定-->
         <scene sceneID="0Hj-is-kOP">
             <objects>
-                <viewController id="c7J-l1-yFM" sceneMemberID="viewController">
+                <viewController id="c7J-l1-yFM" customClass="SettingViewController" customModule="self" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2DK-rd-Fw0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFa-na-M1R" customClass="TreeView" customModule="self" customModuleProvider="target">
+                                <rect key="frame" x="57" y="120" width="260" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OrP-Cd-s0E"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" id="osJ-jt-Zue"/>
+                    <connections>
+                        <outlet property="treeview" destination="gFa-na-M1R" id="khV-Ia-zdP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dl3-vO-fZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="-1079"/>
+            <point key="canvasLocation" x="557.60000000000002" y="-1079.5566502463055"/>
         </scene>
         <!--名刺-->
         <scene sceneID="Md1-XE-c3I">

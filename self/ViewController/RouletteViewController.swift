@@ -24,6 +24,7 @@ class RouletteViewController: UIViewController {
     var text2 = ""
     var text3 = ""
     var text4 = ""
+    var id = ""
     
     var number: Int!
     var chooseLabel: String!
@@ -97,6 +98,7 @@ class RouletteViewController: UIViewController {
             nextView.text2 = otherLabel1
             nextView.text3 = otherLabel2
             nextView.text4 = otherLabel3
+            nextView.id = id
         }
     }
     @IBAction func startButton(){

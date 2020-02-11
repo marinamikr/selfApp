@@ -13,7 +13,7 @@ class QRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        qrImage.image = makeQRCodeImage(text: Util.getUUID())
+        qrImage.image = makeQRCodeImage(text: "marina" + "," + Util.getUUID())
         
     }
     

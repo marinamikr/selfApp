@@ -10,6 +10,9 @@
 		2A8B191CAE94F9CBE402658F /* Pods_self_selfUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6341E592CE85E7C826C342 /* Pods_self_selfUITests.framework */; };
 		4002C9E623E0357E0093666B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4002C9E523E0357E0093666B /* GoogleService-Info.plist */; };
 		4020983D23E0394A0030A2E8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020983C23E0394A0030A2E8 /* Util.swift */; };
+		4028DA1823F2BEE100F33004 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028DA1623F2BEE100F33004 /* TreeView.swift */; };
+		4028DA1923F2BEE100F33004 /* TreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4028DA1723F2BEE100F33004 /* TreeView.xib */; };
+		4028DA1B23F2BFE800F33004 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028DA1A23F2BFE800F33004 /* SettingViewController.swift */; };
 		40544EC823E048D3005DE7B9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40544EC723E048D3005DE7B9 /* Character.swift */; };
 		405B382323A8DA1800333CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B382223A8DA1800333CB8 /* AppDelegate.swift */; };
 		405B382523A8DA1800333CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B382423A8DA1800333CB8 /* SceneDelegate.swift */; };
@@ -57,6 +60,9 @@
 		3F1854CD5B63428161F73D38 /* Pods_self.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_self.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4002C9E523E0357E0093666B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4020983C23E0394A0030A2E8 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		4028DA1623F2BEE100F33004 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		4028DA1723F2BEE100F33004 /* TreeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreeView.xib; sourceTree = "<group>"; };
+		4028DA1A23F2BFE800F33004 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		40544EC723E048D3005DE7B9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		405B381F23A8DA1800333CB8 /* self.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = self.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405B382223A8DA1800333CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 				40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */,
 				40BD044723E97236009F8644 /* CameraViewController.swift */,
 				40BD044923E980F2009F8644 /* IntroductionViewController.swift */,
+				4028DA1A23F2BFE800F33004 /* SettingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -227,6 +234,8 @@
 			children = (
 				40BD045223E987A7009F8644 /* BusinessCard.swift */,
 				40BD045323E987A7009F8644 /* BusinessCard.xib */,
+				4028DA1623F2BEE100F33004 /* TreeView.swift */,
+				4028DA1723F2BEE100F33004 /* TreeView.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -342,6 +351,7 @@
 			files = (
 				405B382F23A8DA1A00333CB8 /* LaunchScreen.storyboard in Resources */,
 				405B382C23A8DA1A00333CB8 /* Assets.xcassets in Resources */,
+				4028DA1923F2BEE100F33004 /* TreeView.xib in Resources */,
 				4002C9E623E0357E0093666B /* GoogleService-Info.plist in Resources */,
 				40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */,
 				405B382A23A8DA1800333CB8 /* Main.storyboard in Resources */,
@@ -478,6 +488,7 @@
 				4020983D23E0394A0030A2E8 /* Util.swift in Sources */,
 				405B382723A8DA1800333CB8 /* ViewController.swift in Sources */,
 				40BD044A23E980F2009F8644 /* IntroductionViewController.swift in Sources */,
+				4028DA1B23F2BFE800F33004 /* SettingViewController.swift in Sources */,
 				40FD48EB23B2E206005BFDB8 /* QRViewController.swift in Sources */,
 				405B385323A8E59100333CB8 /* RealmModel.swift in Sources */,
 				40BD045423E987A7009F8644 /* BusinessCard.swift in Sources */,
@@ -485,6 +496,7 @@
 				405B382323A8DA1800333CB8 /* AppDelegate.swift in Sources */,
 				40544EC823E048D3005DE7B9 /* Character.swift in Sources */,
 				405B382523A8DA1800333CB8 /* SceneDelegate.swift in Sources */,
+				4028DA1823F2BEE100F33004 /* TreeView.swift in Sources */,
 				40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

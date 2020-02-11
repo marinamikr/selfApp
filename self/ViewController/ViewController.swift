@@ -12,6 +12,8 @@ import Firebase
 
 class ViewController: UIViewController {
     
+    
+    
     var characterArray: [Character] = Array()
     var DBRef:DatabaseReference!
     var realm :Realm!
@@ -71,18 +73,26 @@ class ViewController: UIViewController {
         //
         //            }
         //        }
-        businessCard.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.businessCardTapped(_:))))
+        businessCard.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.transition(_ :))))
     }
     
-    @objc func businessCardTapped(_ sender: UITapGestureRecognizer) {
-        let anim = CABasicAnimation(keyPath: "transform.rotation.y")
-        anim.fromValue = 0
-        anim.toValue = 1 * M_PI
-        anim.duration = 1.0
-        anim.repeatCount = 1
-        businessCard.layer.add(anim, forKey: "key")
+    @objc func transition(_ sender: UITapGestureRecognizer) {
+        UIView.transition(with: self.businessCard, duration: 1.0, options: [.transitionFlipFromLeft], animations: nil, completion:{
+            bool in
+            self.businessCard.backView.backgroundColor = UIColor.red
+        })
     }
-    
+//
+//    @objc func businessCardTapped(_ sender: UITapGestureRecognizer) {
+//        let anim = CABasicAnimation(keyPath: "transform.rotation.y")
+//        anim.fromValue = 0
+//        anim.toValue = 1 * M_PI
+//        anim.duration = 1.0
+//        anim.repeatCount = 1
+//        businessCard.layer.add(anim, forKey: "key")
+//
+//    }
+//
     @IBAction func addButton() {
         
         //        let saveData = RealmModel()
