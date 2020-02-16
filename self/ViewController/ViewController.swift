@@ -12,14 +12,14 @@ import Firebase
 
 class ViewController: UIViewController {
     
-    
-    
     var characterArray: [Character] = Array()
     var DBRef:DatabaseReference!
     var realm :Realm!
     var realmModelArray:Results<RealmModel>!
+    var name: String!
     
     @IBOutlet var businessCard: BusinessCard!
+    @IBOutlet var nameLabel: UILabel!
     @IBOutlet var textField: UITextField!
     //    @IBOutlet var label1:UILabel!
     //    @IBOutlet var label2:UILabel!

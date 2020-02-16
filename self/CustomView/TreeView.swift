@@ -33,10 +33,10 @@ class TreeView: UIView {
         
         let label = UILabel()
         
-        
-        label.frame = CGRect(x: viewWidth / 4, y: viewHeight / 2, width: viewWidth / 2, height: 40)
-        label.text = "Hello World"
-        view.addSubview(label)
+//
+//        label.frame = CGRect(x: viewWidth / 4, y: viewHeight / 2, width: viewWidth / 2, height: 40)
+//        label.text = "Hello World"
+//        view.addSubview(label)
         
         makeContents(view: view, makeContents: 6)
         
