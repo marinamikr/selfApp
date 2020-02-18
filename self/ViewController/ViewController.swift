@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         realmModelArray = realm.objects(RealmModel.self)
         
         
-        DBRef.child("userData").child(Util.getUUID()).observe(.value, with: { (snapshot) in
+        DBRef.child("userData").child(Util.getUUID()).child("character").observe(.value, with: { (snapshot) in
             
             for itemSnapShot in snapshot.children  {
                 let snap = itemSnapShot as! DataSnapshot
@@ -74,12 +74,15 @@ class ViewController: UIViewController {
         //            }
         //        }
         businessCard.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.transition(_ :))))
+        
+//        nameLabel.text = name!
     }
     
     @objc func transition(_ sender: UITapGestureRecognizer) {
         UIView.transition(with: self.businessCard, duration: 1.0, options: [.transitionFlipFromLeft], animations: nil, completion:{
             bool in
-            self.businessCard.backView.backgroundColor = UIColor.red
+            self.businessCard.treeView.alpha = 1
+            
         })
     }
 //
@@ -104,7 +107,7 @@ class ViewController: UIViewController {
         
         let data = ["key": textField.text,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
         
-        DBRef.child("userData").child(Util.getUUID()).childByAutoId().setValue(data)
+        DBRef.child("userData").child(Util.getUUID()).child("character").childByAutoId().setValue(data)
         
     }
     

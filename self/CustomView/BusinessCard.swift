@@ -17,6 +17,7 @@ class BusinessCard: UIView {
     @IBOutlet var label5:UILabel!
     @IBOutlet var label6:UILabel!
     @IBOutlet var backView: UIView!
+    @IBOutlet var treeView: TreeView!
 
     override init(frame: CGRect) {
         super.init(frame: frame)

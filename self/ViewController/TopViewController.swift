@@ -10,13 +10,15 @@ import UIKit
 import Firebase
 
 class TopViewController: UIViewController {
-    
     @IBOutlet var nameTextField: UITextField!
     
+    let userDefaults = UserDefaults.standard
+
     var DBRef:DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userDefaults.register(defaults: ["isFirst":false])
         
         nameTextField.delegate = self as! UITextFieldDelegate
         DBRef = Database.database().reference()
@@ -24,22 +26,17 @@ class TopViewController: UIViewController {
     }
     
     func upload(name: String) {
-        let storage = Storage.storage()
-        let storageRef = storage.reference(forURL: "gs://favoritesns3.appspot.com/")
-        let riversRef = storageRef.child(Util.getUUID()).child(String.getRandomStringWithLength(length: 60))
-        riversRef.putData(data, metadata: nil, completion: { metaData, error in
-            let downloadURL: String = (metaData?.downloadURL()?.absoluteString)!
-            let data = ["name": name,"iconURL": downloadURL] as [String : Any]
-            let ref = Database.database().reference()
-            ref.child(Util.getUUID()).child("userData").setValue(data)
-        })
+        let ref = Database.database().reference()
+        let data = ["name": name]
+        ref.child("userData").child(Util.getUUID()).child("name").setValue(data)
+        performSegue(withIdentifier: "toViewController", sender: nil)
+    
         
     }
     
     @IBAction func nextButton() {
         if nameTextField.text != "" {
             upload(name: nameTextField.text!)
-            performSegue(withIdentifier: "toViewController", sender: nil)
         } else {
             makeAleart(title: "名前を入力してください", message: "全て入力してください", okText: "OK")
         }
@@ -48,9 +45,9 @@ class TopViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender:
         Any?) {
         if (segue.identifier == "toViewController") {
-            let ViewController = (segue.destination as?
-            ViewController)!
-            ViewController.name = self.nameTextField.text
+            let UITabBarController = (segue.destination as?
+                UITabBarController)!
+            (UITabBarController.viewControllers![0] as? ViewController)!.name = self.nameTextField.text
         }
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -66,6 +63,7 @@ class TopViewController: UIViewController {
     }
     
 }
+
 extension TopViewController :UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
