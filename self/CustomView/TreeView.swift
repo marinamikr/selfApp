@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class TreeView: UIView {
-    
+     @IBOutlet var backView: UIView!
     
     
     override init(frame: CGRect) {
@@ -29,6 +29,8 @@ class TreeView: UIView {
         }
        
         view.frame = self.bounds
+        print("TreeView")
+        print(self.bounds)
         view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         view.backgroundColor = UIColor.blue
         
@@ -55,15 +57,15 @@ class TreeView: UIView {
         let labelHeight = 20.0
         //angle　何度ずつずらすか
         //radius 半径
-        print(String(centerX) + "," + String(centerY))
+//        print(String(centerX) + "," + String(centerY))
         
         for i in 0 ..< makeContents {
             let angle: Double = 360.0 / Double(makeContents)
             let x: Double = angle / 2 + angle * Double(i)
-            print(x)
+//            print(x)
             let posX = Double(radius) * sin(x * (Double.pi / 180)) + centerX
             let posY = centerY - Double(radius) * cos(x * (Double.pi / 180))
-            print(String(posX) + "," + String(posY))
+//            print(String(posX) + "," + String(posY))
             let label = UILabel()
             label.frame = CGRect(x: posX - labelWidth / 2, y: posY - labelHeight / 2, width: labelWidth, height: labelHeight)
             label.text = "Hello World"

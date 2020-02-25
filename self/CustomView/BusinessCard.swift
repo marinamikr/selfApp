@@ -33,7 +33,8 @@ class BusinessCard: UIView {
         guard let view = UINib(nibName: "BusinessCard", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView else {
             return
         }
-        
+        print("BusinessCard")
+        print(self.bounds)
         view.frame = self.bounds
         view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.addSubview(view)

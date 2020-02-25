@@ -72,13 +72,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-gX-pvT" customClass="TreeView" customModule="self" customModuleProvider="target">
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-gX-pvT" customClass="TreeView" customModule="self" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="326" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8aR-gX-pvT" firstAttribute="top" secondItem="69B-N0-LLi" secondAttribute="top" id="Ehf-mh-hb6"/>
+                            <constraint firstAttribute="trailing" secondItem="8aR-gX-pvT" secondAttribute="trailing" id="bd4-GT-Jc6"/>
+                            <constraint firstItem="8aR-gX-pvT" firstAttribute="leading" secondItem="69B-N0-LLi" secondAttribute="leading" id="fRk-kB-QPB"/>
+                            <constraint firstAttribute="bottom" secondItem="8aR-gX-pvT" secondAttribute="bottom" id="lqu-qV-bbY"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>

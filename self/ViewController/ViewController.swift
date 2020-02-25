@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(view.bounds.width)
         DBRef = Database.database().reference()
         
         // Do any additional setup after loading the view.
