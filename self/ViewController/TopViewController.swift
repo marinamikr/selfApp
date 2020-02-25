@@ -28,10 +28,10 @@ class TopViewController: UIViewController {
     func upload(name: String) {
         let ref = Database.database().reference()
         let data = ["name": name]
-        ref.child("userData").child(Util.getUUID()).child("name").setValue(data)
-        performSegue(withIdentifier: "toViewController", sender: nil)
-    
-        
+        ref.child("userData").child(Util.getUUID()).setValue(data)
+        userDefaults.set(true, forKey: "isFirst")
+        dismiss(animated: true, completion: nil)
+
     }
     
     @IBAction func nextButton() {
@@ -39,15 +39,6 @@ class TopViewController: UIViewController {
             upload(name: nameTextField.text!)
         } else {
             makeAleart(title: "名前を入力してください", message: "全て入力してください", okText: "OK")
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender:
-        Any?) {
-        if (segue.identifier == "toViewController") {
-            let UITabBarController = (segue.destination as?
-                UITabBarController)!
-            (UITabBarController.viewControllers![0] as? ViewController)!.name = self.nameTextField.text
         }
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

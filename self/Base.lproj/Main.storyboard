@@ -304,7 +304,7 @@
             <objects>
                 <viewController id="HQ9-Rv-3VM" customClass="CameraViewController" customModule="self" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qg-m4-Epl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sNx-wd-8Ji"/>
@@ -316,14 +316,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYs-xy-O6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202.40000000000001" y="638.42364532019712"/>
+            <point key="canvasLocation" x="-15" y="606"/>
         </scene>
         <!--設定-->
         <scene sceneID="0Hj-is-kOP">
             <objects>
                 <viewController id="c7J-l1-yFM" customClass="SettingViewController" customModule="self" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2DK-rd-Fw0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFa-na-M1R" customClass="TreeView" customModule="self" customModuleProvider="target">
@@ -349,44 +349,44 @@
             <objects>
                 <viewController id="6nb-ld-I55" customClass="ViewController" customModule="self" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CUT-of-2ub">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAp-Aw-tYe">
-                                <rect key="frame" x="136" y="353" width="142" height="34"/>
+                                <rect key="frame" x="136" y="407" width="142" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="追加" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO2-rq-Li5">
-                                <rect key="frame" x="80" y="317.33333333333331" width="72" height="27.666666666666686"/>
+                                <rect key="frame" x="80" y="371.33333333333331" width="72" height="27.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V46-CW-69f">
-                                <rect key="frame" x="176" y="403" width="62" height="30"/>
+                                <rect key="frame" x="176" y="457" width="62" height="30"/>
                                 <state key="normal" title="追加する"/>
                                 <connections>
                                     <action selector="addButton" destination="6nb-ld-I55" eventType="touchUpInside" id="Veg-ot-OvT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9K-DM-W1B">
-                                <rect key="frame" x="293" y="65" width="30" height="30"/>
+                                <rect key="frame" x="293" y="109" width="30" height="30"/>
                                 <state key="normal" title="QR"/>
                                 <connections>
                                     <segue destination="NeQ-oI-4xX" kind="show" id="xqf-8c-9tj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlC-A7-9pw">
-                                <rect key="frame" x="46" y="44" width="31" height="30"/>
+                                <rect key="frame" x="46" y="88" width="31" height="30"/>
                                 <state key="normal" title="回転"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ED-O5-e1g" customClass="BusinessCard" customModule="self" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="126.00000000000001" width="375" height="132.33333333333337"/>
+                                <rect key="frame" x="0.0" y="170" width="375" height="142.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGC-9B-GCh">
-                                <rect key="frame" x="166" y="53" width="42" height="21"/>
+                                <rect key="frame" x="166" y="97" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -430,6 +430,7 @@
                         <outlet property="businessCard" destination="1ED-O5-e1g" id="uQA-Y9-rIh"/>
                         <outlet property="nameLabel" destination="CGC-9B-GCh" id="gkt-zG-H9O"/>
                         <outlet property="textField" destination="PAp-Aw-tYe" id="f0O-Ky-j6s"/>
+                        <segue destination="QOX-pf-906" kind="modal" identifier="toTopViewController" id="leK-Ic-a9d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z75-R3-OGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -459,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQN-8d-JNf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1309" y="-429"/>
+            <point key="canvasLocation" x="2465" y="-468"/>
         </scene>
         <!--Introduction View Controller-->
         <scene sceneID="Pcn-ok-V3u">
@@ -482,7 +483,7 @@
             <objects>
                 <viewController id="QOX-pf-906" customClass="TopViewController" customModule="self" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bcy-9p-3d4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJ0-Wt-Xfv">
@@ -503,19 +504,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="KMk-mv-ukw"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dxe-l7-qq5"/>
                     <connections>
                         <outlet property="nameTextField" destination="W3t-SA-KB4" id="Ph2-u0-KHW"/>
-                        <segue destination="F5a-NG-Vhc" kind="show" identifier="toViewController" id="V5Y-cP-CFF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVN-HR-tch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1161" y="-103"/>
+            <point key="canvasLocation" x="1822" y="-638"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--CustomUI Tab Bar Controller-->
         <scene sceneID="3dt-sh-ppd">
             <objects>
-                <tabBarController id="F5a-NG-Vhc" sceneMemberID="viewController">
+                <tabBarController id="F5a-NG-Vhc" customClass="CustomUITabBarController" customModule="self" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="mTj-EI-5wr"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9MS-M5-jCl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -530,7 +531,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFm-0u-VGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358" y="-102"/>
+            <point key="canvasLocation" x="-638" y="-103"/>
         </scene>
     </scenes>
 </document>

@@ -86,6 +86,8 @@ class StoryViewController: UIViewController {
         DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data3)
         DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data4)
         
+        self.dismiss(animated: true, completion: nil)
+
     }
     
     /*

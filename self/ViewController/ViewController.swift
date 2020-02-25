@@ -12,11 +12,15 @@ import Firebase
 
 class ViewController: UIViewController {
     
+    var isFirst: Bool = false
+    let userDefaults = UserDefaults.standard
+    
     var characterArray: [Character] = Array()
     var DBRef:DatabaseReference!
     var realm :Realm!
     var realmModelArray:Results<RealmModel>!
     var name: String!
+    
     
     @IBOutlet var businessCard: BusinessCard!
     @IBOutlet var nameLabel: UILabel!
@@ -33,22 +37,12 @@ class ViewController: UIViewController {
         print(view.bounds.width)
         DBRef = Database.database().reference()
         
+        
+        
         // Do any additional setup after loading the view.
         realm = try! Realm()
         realmModelArray = realm.objects(RealmModel.self)
         
-        
-        DBRef.child("userData").child(Util.getUUID()).child("character").observe(.value, with: { (snapshot) in
-            
-            for itemSnapShot in snapshot.children  {
-                let snap = itemSnapShot as! DataSnapshot
-                let data = snap.value as! [String : AnyObject]
-                var character: Character = Character(key: data["key"] as! String, itsu: data["itsu"] as! String, dokode: data["dokode"] as! String, dareto: data["dareto"] as! String, nanishita: data["nanishita"] as! String, sonota: data["sonota"] as! String)
-                self.characterArray.append(character)
-            }
-            self.showCharacter()
-            
-        })
         
         //        for i in 0..<realmModelArray.count {
         //            switch i {
@@ -76,9 +70,39 @@ class ViewController: UIViewController {
         //        }
         businessCard.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.transition(_ :))))
         
-//        nameLabel.text = name!
+        //        nameLabel.text = name!
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        userDefaults.register(defaults: ["isFirst":false])
+        isFirst = userDefaults.bool(forKey: "isFirst")
+        if !isFirst {
+            performSegue(withIdentifier: "toTopViewController",sender: nil)
+        }else{
+            getData()
+        }
+    }
+    
+    func getData()  {
+           DBRef.child("userData").child(Util.getUUID()).child("character").observe(.value, with: { (snapshot) in
+               
+               for itemSnapShot in snapshot.children  {
+                   let snap = itemSnapShot as! DataSnapshot
+                   let data = snap.value as! [String : AnyObject]
+                   var character: Character = Character(key: data["key"] as! String, itsu: data["itsu"] as! String, dokode: data["dokode"] as! String, dareto: data["dareto"] as! String, nanishita: data["nanishita"] as! String, sonota: data["sonota"] as! String)
+                   self.characterArray.append(character)
+               }
+               self.showCharacter()
+           })
+        DBRef.child("userData").child(Util.getUUID()).observe(.value, with: { (snapshot) in
+                let snap = snapshot as! DataSnapshot
+                let data = snap.value as! [String : AnyObject]
+            self.nameLabel.text = data["name"] as! String
+        })
+        
+        
+    }
     @objc func transition(_ sender: UITapGestureRecognizer) {
         UIView.transition(with: self.businessCard, duration: 1.0, options: [.transitionFlipFromLeft], animations: nil, completion:{
             bool in
@@ -86,17 +110,17 @@ class ViewController: UIViewController {
             
         })
     }
-//
-//    @objc func businessCardTapped(_ sender: UITapGestureRecognizer) {
-//        let anim = CABasicAnimation(keyPath: "transform.rotation.y")
-//        anim.fromValue = 0
-//        anim.toValue = 1 * M_PI
-//        anim.duration = 1.0
-//        anim.repeatCount = 1
-//        businessCard.layer.add(anim, forKey: "key")
-//
-//    }
-//
+    //
+    //    @objc func businessCardTapped(_ sender: UITapGestureRecognizer) {
+    //        let anim = CABasicAnimation(keyPath: "transform.rotation.y")
+    //        anim.fromValue = 0
+    //        anim.toValue = 1 * M_PI
+    //        anim.duration = 1.0
+    //        anim.repeatCount = 1
+    //        businessCard.layer.add(anim, forKey: "key")
+    //
+    //    }
+    //
     @IBAction func addButton() {
         
         //        let saveData = RealmModel()
