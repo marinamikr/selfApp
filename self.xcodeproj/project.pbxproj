@@ -25,11 +25,14 @@
 		405B385323A8E59100333CB8 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B385223A8E59100333CB8 /* RealmModel.swift */; };
 		40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */; };
 		40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */; };
+		408C454324865DE900A0CF09 /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C454224865DE900A0CF09 /* CharacterSet.swift */; };
 		40BD044823E97236009F8644 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD044723E97236009F8644 /* CameraViewController.swift */; };
 		40BD044A23E980F2009F8644 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD044923E980F2009F8644 /* IntroductionViewController.swift */; };
 		40BD045423E987A7009F8644 /* BusinessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD045223E987A7009F8644 /* BusinessCard.swift */; };
 		40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BD97C523CDD70F005F45FB /* yazurushi.png */; };
 		40BD97C823CDDEAB005F45FB /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD97C723CDDEAB005F45FB /* StoryViewController.swift */; };
+		40EB063E240E6C09009521E4 /* Story.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB063D240E6C09009521E4 /* Story.xib */; };
+		40EB0640240E6C11009521E4 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EB063F240E6C11009521E4 /* Story.swift */; };
 		40F886042405292E00969895 /* CustomUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F886032405292E00969895 /* CustomUITabBarController.swift */; };
 		40F8860624052C9A00969895 /* BusinessCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F8860524052C9A00969895 /* BusinessCard.xib */; };
 		40F8860824052CE200969895 /* TreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F8860724052CE200969895 /* TreeView.xib */; };
@@ -83,11 +86,14 @@
 		405B385223A8E59100333CB8 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
+		408C454224865DE900A0CF09 /* CharacterSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
 		40BD044723E97236009F8644 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		40BD044923E980F2009F8644 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		40BD045223E987A7009F8644 /* BusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCard.swift; sourceTree = "<group>"; };
 		40BD97C523CDD70F005F45FB /* yazurushi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yazurushi.png; sourceTree = "<group>"; };
 		40BD97C723CDDEAB005F45FB /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		40EB063D240E6C09009521E4 /* Story.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Story.xib; sourceTree = "<group>"; };
+		40EB063F240E6C11009521E4 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		40F886032405292E00969895 /* CustomUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITabBarController.swift; sourceTree = "<group>"; };
 		40F8860524052C9A00969895 /* BusinessCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCard.xib; sourceTree = "<group>"; };
 		40F8860724052CE200969895 /* TreeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreeView.xib; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				40544EC723E048D3005DE7B9 /* Character.swift */,
+				408C454224865DE900A0CF09 /* CharacterSet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +249,8 @@
 				4028DA1623F2BEE100F33004 /* TreeView.swift */,
 				40F8860524052C9A00969895 /* BusinessCard.xib */,
 				40F8860724052CE200969895 /* TreeView.xib */,
+				40EB063D240E6C09009521E4 /* Story.xib */,
+				40EB063F240E6C11009521E4 /* Story.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -358,6 +367,7 @@
 				405B382F23A8DA1A00333CB8 /* LaunchScreen.storyboard in Resources */,
 				405B382C23A8DA1A00333CB8 /* Assets.xcassets in Resources */,
 				40F8860824052CE200969895 /* TreeView.xib in Resources */,
+				40EB063E240E6C09009521E4 /* Story.xib in Resources */,
 				4002C9E623E0357E0093666B /* GoogleService-Info.plist in Resources */,
 				40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */,
 				40F8860624052C9A00969895 /* BusinessCard.xib in Resources */,
@@ -504,8 +514,10 @@
 				40544EC823E048D3005DE7B9 /* Character.swift in Sources */,
 				40F886042405292E00969895 /* CustomUITabBarController.swift in Sources */,
 				405B382523A8DA1800333CB8 /* SceneDelegate.swift in Sources */,
+				408C454324865DE900A0CF09 /* CharacterSet.swift in Sources */,
 				4028DA1823F2BEE100F33004 /* TreeView.swift in Sources */,
 				40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */,
+				40EB0640240E6C11009521E4 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,7 +692,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1f;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V7EPKJW7KG;
 				INFOPLIST_FILE = self/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -700,8 +712,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1f;
-				DEVELOPMENT_TEAM = V7EPKJW7KG;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S54MXE8DC3;
 				INFOPLIST_FILE = self/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

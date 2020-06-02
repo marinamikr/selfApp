@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     
     
     @IBOutlet var businessCard: BusinessCard!
+    @IBOutlet var treeCard: TreeView!
+    @IBOutlet var story: Story!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var textField: UITextField!
     //    @IBOutlet var label1:UILabel!
@@ -72,7 +74,7 @@ class ViewController: UIViewController {
         
         //        nameLabel.text = name!
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         userDefaults.register(defaults: ["isFirst":false])
@@ -98,18 +100,28 @@ class ViewController: UIViewController {
         DBRef.child("userData").child(Util.getUUID()).observe(.value, with: { (snapshot) in
                 let snap = snapshot as! DataSnapshot
                 let data = snap.value as! [String : AnyObject]
-            self.nameLabel.text = data["name"] as! String
+//            self.nameLabel.text = data["name"] as! String
+            self.businessCard.nameLabel.text = data["name"] as! String
         })
         
         
     }
+//
+//    func getStory() {
+//        DBRef.child("userData").child(Util.getUUID()).child("character").observe(.value, with: { (snapshot) in
+//
+//
+//    }
     @objc func transition(_ sender: UITapGestureRecognizer) {
         UIView.transition(with: self.businessCard, duration: 1.0, options: [.transitionFlipFromLeft], animations: nil, completion:{
             bool in
             self.businessCard.treeView.alpha = 1
             
+            self.story.isHidden = false
         })
+        
     }
+    
     //
     //    @objc func businessCardTapped(_ sender: UITapGestureRecognizer) {
     //        let anim = CABasicAnimation(keyPath: "transform.rotation.y")

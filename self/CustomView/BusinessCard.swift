@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import RealmSwift
+import FirebaseDatabase
+
 
 class BusinessCard: UIView {
     
@@ -17,6 +21,9 @@ class BusinessCard: UIView {
     @IBOutlet var label5:UILabel!
     @IBOutlet var label6:UILabel!
     @IBOutlet var treeView: TreeView!
+    @IBOutlet var nameLabel: UILabel!
+    var DBRef:DatabaseReference!
+
     
     //    override init(frame: CGRect) {
     //        super.init(frame: frame)
