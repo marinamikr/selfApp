@@ -82,8 +82,8 @@ class TreeView: UIView {
         let centerX = Double(viewWidth / 2) + Double(view.frame.origin.x)
         let centerY = Double(viewHeight / 2) + Double(view.frame.origin.y)
         let radius = 40
-        let labelWidth = 50.0
-        let labelHeight = 50.0
+        let labelWidth = 80.0
+        let labelHeight = 80.0
         //angle　何度ずつずらすか
         //radius 半径
         //        print(String(centerX) + "," + String(centerY))
@@ -97,7 +97,7 @@ class TreeView: UIView {
             //            print(String(posX) + "," + String(posY))
             let label = UILabel()
             label.frame = CGRect(x: posX - labelWidth / 2, y: posY - labelHeight / 2, width: labelWidth, height: labelHeight)
-            label.backgroundColor = UIColor.red
+//            label.backgroundColor = UIColor.red
             //            label.text = "data"
             labelArray.append(label)
             view.addSubview(label)
@@ -135,9 +135,9 @@ class TreeView: UIView {
                 
             }
             
-            for i in 0 ..< array.count {
-                labelArray.append("array")
-                print("aa", self.labelArray)
+            for i in 0 ..< self.labelArray.count {
+                let label = self.labelArray[i]
+                label.text = array[i]
                 
             }
             

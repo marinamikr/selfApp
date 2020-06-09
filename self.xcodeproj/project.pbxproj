@@ -23,6 +23,7 @@
 		405B383A23A8DA1A00333CB8 /* selfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B383923A8DA1A00333CB8 /* selfTests.swift */; };
 		405B384523A8DA1A00333CB8 /* selfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B384423A8DA1A00333CB8 /* selfUITests.swift */; };
 		405B385323A8E59100333CB8 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B385223A8E59100333CB8 /* RealmModel.swift */; };
+		40880374248FA878007504D4 /* LookCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40880373248FA878007504D4 /* LookCharacterViewController.swift */; };
 		40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */; };
 		40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */; };
 		408C454324865DE900A0CF09 /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C454224865DE900A0CF09 /* CharacterSet.swift */; };
@@ -84,6 +85,7 @@
 		405B384423A8DA1A00333CB8 /* selfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfUITests.swift; sourceTree = "<group>"; };
 		405B384623A8DA1A00333CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405B385223A8E59100333CB8 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		40880373248FA878007504D4 /* LookCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
 		408C454224865DE900A0CF09 /* CharacterSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				4028DA1A23F2BFE800F33004 /* SettingViewController.swift */,
 				4028DA1D23F9A44200F33004 /* TopViewController.swift */,
 				40F886032405292E00969895 /* CustomUITabBarController.swift */,
+				40880373248FA878007504D4 /* LookCharacterViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				4028DA1823F2BEE100F33004 /* TreeView.swift in Sources */,
 				40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */,
 				40EB0640240E6C11009521E4 /* Story.swift in Sources */,
+				40880374248FA878007504D4 /* LookCharacterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
