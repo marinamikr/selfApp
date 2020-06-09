@@ -98,7 +98,7 @@ class TreeView: UIView {
             let label = UILabel()
             label.frame = CGRect(x: posX - labelWidth / 2, y: posY - labelHeight / 2, width: labelWidth, height: labelHeight)
             label.backgroundColor = UIColor.red
-            label.text = "data"
+            //            label.text = "data"
             labelArray.append(label)
             view.addSubview(label)
         }
@@ -106,20 +106,20 @@ class TreeView: UIView {
         
         DBRef = Database.database().reference()
         
-//        DBRef.child("userData").child("8550A0A3-385E-4989-8C41-07F631C696BA").child("character").child("-M7gW4bDdq5UR7Fd2uth").child("key").observe(.value, with: { (snapshot) in
-//            print("##",snapshot.value)
-//            for itemSnapShot in snapshot.children  {
-//                let snap = itemSnapShot as! DataSnapshot
-//                let data = snap.value as! [String : AnyObject]
-//                print("####",data["key"])
-//                var post: CharacterSet = CharacterSet(charactersIn: data["key"] as! String)
-//                self.postArray.append(post)
-//
-//            }
-//            for label in self.labelArray {
-//                label.text = postArray[0]
-//            }
-//        })
+        //        DBRef.child("userData").child("8550A0A3-385E-4989-8C41-07F631C696BA").child("character").child("-M7gW4bDdq5UR7Fd2uth").child("key").observe(.value, with: { (snapshot) in
+        //            print("##",snapshot.value)
+        //            for itemSnapShot in snapshot.children  {
+        //                let snap = itemSnapShot as! DataSnapshot
+        //                let data = snap.value as! [String : AnyObject]
+        //                print("####",data["key"])
+        //                var post: CharacterSet = CharacterSet(charactersIn: data["key"] as! String)
+        //                self.postArray.append(post)
+        //
+        //            }
+        //            for label in self.labelArray {
+        //                label.text = postArray[0]
+        //            }
+        //        })
         var array = [String]()
         
         DBRef.child("userData").child("8550A0A3-385E-4989-8C41-07F631C696BA").child("character").observe(.value, with: { (snapshot) in
@@ -130,15 +130,20 @@ class TreeView: UIView {
                 print("####",data["key"])
                 let post = data["key"] as! String
                 array.append(post)
-//                var post: CharacterSet = CharacterSet(charactersIn: data["key"] as! String)
-//                self.postArray.append(post)
+                //                var post: CharacterSet = CharacterSet(charactersIn: data["key"] as! String)
+                //                self.postArray.append(post)
                 
             }
             
-            for文で取り出すarrayの中身を
-            labelarrayの一個づつに入れてく
+            for i in 0 ..< array.count {
+                labelArray.append("array")
+                print("aa", self.labelArray)
+                
+            }
+            
+            //            for文で取り出すarrayの中身を
+            //            labelarrayの一個づつに入れてく
         })
-        
         
         
     }
