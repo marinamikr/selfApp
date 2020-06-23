@@ -40,11 +40,9 @@ class ViewController: UIViewController {
         DBRef = Database.database().reference()
         
         
-        
         // Do any additional setup after loading the view.
         realm = try! Realm()
         realmModelArray = realm.objects(RealmModel.self)
-        
         
         //        for i in 0..<realmModelArray.count {
         //            switch i {
@@ -71,8 +69,6 @@ class ViewController: UIViewController {
         //            }
         //        }
         businessCard.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.transition(_ :))))
-        
-        //        nameLabel.text = name!
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -122,6 +118,15 @@ class ViewController: UIViewController {
         
     }
     
+    @objc func transition2(_ sender: UITapGestureRecognizer) {
+          UIView.transition(with: self.businessCard, duration: 1.0, options: [.transitionFlipFromLeft], animations: nil, completion:{
+              bool in
+              self.businessCard.treeView.alpha = 0
+              
+              self.story.isHidden = false
+          })
+          
+      }
     //
     //    @objc func businessCardTapped(_ sender: UITapGestureRecognizer) {
     //        let anim = CABasicAnimation(keyPath: "transform.rotation.y")
@@ -147,6 +152,7 @@ class ViewController: UIViewController {
         DBRef.child("userData").child(Util.getUUID()).child("character").childByAutoId().setValue(data)
         
     }
+    
     
     //    @IBAction func rotationButton(){
     //               let storyboard: UIStoryboard = self.storyboard!

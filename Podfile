@@ -8,6 +8,9 @@ target 'self' do
   # Pods for self
 
   pod 'RealmSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'selfTests' do
     inherit! :search_paths
@@ -20,9 +23,4 @@ target 'self' do
 
 
 use_frameworks!
-pod 'Firebase/Core'
-pod 'Firebase/Database'
-
-
-
 end

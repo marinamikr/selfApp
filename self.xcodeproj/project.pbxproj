@@ -23,6 +23,8 @@
 		405B383A23A8DA1A00333CB8 /* selfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B383923A8DA1A00333CB8 /* selfTests.swift */; };
 		405B384523A8DA1A00333CB8 /* selfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B384423A8DA1A00333CB8 /* selfUITests.swift */; };
 		405B385323A8E59100333CB8 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B385223A8E59100333CB8 /* RealmModel.swift */; };
+		406BA24124A2017300B919A2 /* MakeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BA24024A2017300B919A2 /* MakeAccountViewController.swift */; };
+		406BA24724A209FF00B919A2 /* extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BA24624A209FF00B919A2 /* extention.swift */; };
 		40880374248FA878007504D4 /* LookCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40880373248FA878007504D4 /* LookCharacterViewController.swift */; };
 		40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */; };
 		40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */; };
@@ -85,6 +87,8 @@
 		405B384423A8DA1A00333CB8 /* selfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfUITests.swift; sourceTree = "<group>"; };
 		405B384623A8DA1A00333CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405B385223A8E59100333CB8 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		406BA24024A2017300B919A2 /* MakeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAccountViewController.swift; sourceTree = "<group>"; };
+		406BA24624A209FF00B919A2 /* extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extention.swift; sourceTree = "<group>"; };
 		40880373248FA878007504D4 /* LookCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				4028DA1D23F9A44200F33004 /* TopViewController.swift */,
 				40F886032405292E00969895 /* CustomUITabBarController.swift */,
 				40880373248FA878007504D4 /* LookCharacterViewController.swift */,
+				406BA24024A2017300B919A2 /* MakeAccountViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -209,6 +214,8 @@
 		405B382123A8DA1800333CB8 /* self */ = {
 			isa = PBXGroup;
 			children = (
+				406BA24524A209DD00B919A2 /* Extention */,
+				406BA24224A203F400B919A2 /* Util */,
 				40BD044B23E986E0009F8644 /* CustomView */,
 				40544EC623E048AE005DE7B9 /* Model */,
 				4020983B23E0390B0030A2E8 /* ViewController */,
@@ -221,7 +228,6 @@
 				405B385223A8E59100333CB8 /* RealmModel.swift */,
 				40BD97C523CDD70F005F45FB /* yazurushi.png */,
 				4002C9E523E0357E0093666B /* GoogleService-Info.plist */,
-				4020983C23E0394A0030A2E8 /* Util.swift */,
 			);
 			path = self;
 			sourceTree = "<group>";
@@ -243,6 +249,22 @@
 				405B384623A8DA1A00333CB8 /* Info.plist */,
 			);
 			path = selfUITests;
+			sourceTree = "<group>";
+		};
+		406BA24224A203F400B919A2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4020983C23E0394A0030A2E8 /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		406BA24524A209DD00B919A2 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				406BA24624A209FF00B919A2 /* extention.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 		40BD044B23E986E0009F8644 /* CustomView */ = {
@@ -507,12 +529,14 @@
 				4020983D23E0394A0030A2E8 /* Util.swift in Sources */,
 				405B382723A8DA1800333CB8 /* ViewController.swift in Sources */,
 				4028DA1E23F9A44200F33004 /* TopViewController.swift in Sources */,
+				406BA24124A2017300B919A2 /* MakeAccountViewController.swift in Sources */,
 				40BD044A23E980F2009F8644 /* IntroductionViewController.swift in Sources */,
 				4028DA1B23F2BFE800F33004 /* SettingViewController.swift in Sources */,
 				40FD48EB23B2E206005BFDB8 /* QRViewController.swift in Sources */,
 				405B385323A8E59100333CB8 /* RealmModel.swift in Sources */,
 				40BD045423E987A7009F8644 /* BusinessCard.swift in Sources */,
 				40BD97C823CDDEAB005F45FB /* StoryViewController.swift in Sources */,
+				406BA24724A209FF00B919A2 /* extention.swift in Sources */,
 				405B382323A8DA1800333CB8 /* AppDelegate.swift in Sources */,
 				40544EC823E048D3005DE7B9 /* Character.swift in Sources */,
 				40F886042405292E00969895 /* CustomUITabBarController.swift in Sources */,
