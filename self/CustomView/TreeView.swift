@@ -137,7 +137,9 @@ class TreeView: UIView {
             
             for i in 0 ..< self.labelArray.count {
                 let label = self.labelArray[i]
-                label.text = array[i]
+                if array.count > i {
+                    label.text = array[i]
+                }
                 
             }
             
