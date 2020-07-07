@@ -49,9 +49,8 @@ class MakeAccountViewController: UIViewController  {
     func uploadIcon(name: String,pic: UIImage){
         // strageの一番トップのReferenceを指定
         let storage = Storage.storage()
-        // let storageRef = storage.reference(forURL: "gs://calender-4a2d3.appspot.com")
-        let storageRef = storage.reference(forURL: "https://self-f8991.firebaseio.com/")
-        
+        let storageRef = storage.reference()
+
         //変数dataにpicをNSDataにしたものを指定
         if let data = Util.resizeImage(src: pic, max: 200).jpegData(compressionQuality: 0.8) {
             // トップReferenceの一つ下の固有IDの枝を指定
