@@ -61,4 +61,31 @@ class BusinessCard: UIView {
             self.addSubview(view)
         }
     }
+    
+    func setCharacter(characterArray:[Character]) {
+        for i in 0 ..< characterArray.count {
+            switch i {
+            case 0:
+                label1.text = characterArray[i].key
+                break
+            case 1:
+                label2.text = characterArray[i].key
+                break
+            case 2:
+                label3.text = characterArray[i].key
+                break
+            case 3:
+                label4.text = characterArray[i].key
+                break
+            case 4:
+                label5.text = characterArray[i].key
+                break
+            case 5:
+                label6.text = characterArray[i].key
+                break
+            default: break
+                
+            }
+        }
+    }
 }

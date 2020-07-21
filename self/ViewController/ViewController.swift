@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var realmModelArray:Results<RealmModel>!
     var name: String!
     
+
     
     @IBOutlet var businessCard: BusinessCard!
     @IBOutlet var treeCard: TreeView!
@@ -38,7 +39,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print(view.bounds.width)
         DBRef = Database.database().reference()
-        
+        var isFirst: Bool = false
+
         
         // Do any additional setup after loading the view.
         realm = try! Realm()
@@ -82,6 +84,17 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+//           let elDrawer = self.navigationController?.parent?.parent as! KYDrawerController
+//           (elDrawer.drawerViewController as! MenuItemViewController).dalegate = self
+           isFirst = userDefaults.bool(forKey: "isFirst")
+           if !isFirst {
+               performSegue(withIdentifier: "toTopViewController",sender: nil)
+           }else{
+               getData()
+        }
+       }
     func getData()  {
            DBRef.child("userData").child(Util.getUUID()).child("character").observe(.value, with: { (snapshot) in
                
@@ -91,7 +104,7 @@ class ViewController: UIViewController {
                    var character: Character = Character(key: data["key"] as! String, itsu: data["itsu"] as! String, dokode: data["dokode"] as! String, dareto: data["dareto"] as! String, nanishita: data["nanishita"] as! String, sonota: data["sonota"] as! String)
                    self.characterArray.append(character)
                }
-               self.showCharacter()
+            self.businessCard.setCharacter(characterArray: self.characterArray)
            })
         DBRef.child("userData").child(Util.getUUID()).observe(.value, with: { (snapshot) in
                 let snap = snapshot as! DataSnapshot
@@ -99,7 +112,6 @@ class ViewController: UIViewController {
 //            self.nameLabel.text = data["name"] as! String
             self.businessCard.nameLabel.text = data["name"] as! String
         })
-        
         
     }
 //
@@ -111,22 +123,17 @@ class ViewController: UIViewController {
     @objc func transition(_ sender: UITapGestureRecognizer) {
         UIView.transition(with: self.businessCard, duration: 1.0, options: [.transitionFlipFromLeft], animations: nil, completion:{
             bool in
-            self.businessCard.treeView.alpha = 1
+            if self.businessCard.treeView.alpha == 0 {
+                self.businessCard.treeView.alpha = 1
+            } else  {
+                self.businessCard.treeView.alpha = 0
+            }
             
             self.story.isHidden = false
         })
         
     }
     
-    @objc func transition2(_ sender: UITapGestureRecognizer) {
-          UIView.transition(with: self.businessCard, duration: 1.0, options: [.transitionFlipFromLeft], animations: nil, completion:{
-              bool in
-              self.businessCard.treeView.alpha = 0
-              
-              self.story.isHidden = false
-          })
-          
-      }
     //
     //    @objc func businessCardTapped(_ sender: UITapGestureRecognizer) {
     //        let anim = CABasicAnimation(keyPath: "transform.rotation.y")
@@ -163,32 +170,4 @@ class ViewController: UIViewController {
     //               self.present(nextView, animated: true, completion: nil)
     //    }
     
-    func showCharacter() {
-        for i in 0..<characterArray.count {
-            switch i {
-            case 0:
-                businessCard.label1.text = characterArray[i].key
-                break
-            case 1:
-                businessCard.label2.text = characterArray[i].key
-                break
-            case 2:
-                businessCard.label3.text = characterArray[i].key
-                break
-            case 3:
-                businessCard.label4.text = characterArray[i].key
-                break
-            case 4:
-                businessCard.label5.text = characterArray[i].key
-                break
-            case 5:
-                businessCard.label6.text = characterArray[i].key
-                break
-            default: break
-                
-            }
-        }
-    }
-    
 }
-

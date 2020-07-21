@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B2I-1t-hRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F5a-NG-Vhc">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTK-6I-WPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="222"/>
+            <point key="canvasLocation" x="1319" y="233"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="I3q-gz-pFF">
@@ -275,6 +275,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saveButton" destination="Yuc-Fq-jaL" eventType="touchUpInside" id="984-zB-JFV"/>
+                                    <segue destination="6nb-ld-I55" kind="show" id="wFv-Rz-Kvu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Episode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPF-Nb-cFl">
@@ -441,18 +442,18 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAp-Aw-tYe">
-                                <rect key="frame" x="136" y="353" width="142" height="34"/>
+                                <rect key="frame" x="136" y="402" width="142" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="追加" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO2-rq-Li5">
-                                <rect key="frame" x="80" y="317.33333333333331" width="72" height="27.666666666666686"/>
+                                <rect key="frame" x="80" y="366.33333333333331" width="72" height="27.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V46-CW-69f">
-                                <rect key="frame" x="176" y="403" width="62" height="30"/>
+                                <rect key="frame" x="176" y="452" width="62" height="30"/>
                                 <state key="normal" title="追加する"/>
                                 <connections>
                                     <action selector="addButton" destination="6nb-ld-I55" eventType="touchUpInside" id="Veg-ot-OvT"/>
@@ -466,7 +467,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ED-O5-e1g" customClass="BusinessCard" customModule="self" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="126.00000000000001" width="375" height="132.33333333333337"/>
+                                <rect key="frame" x="0.0" y="126.00000000000001" width="375" height="181.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH6-J6-KN7">
@@ -503,6 +504,7 @@
                         <viewLayoutGuide key="safeArea" id="vy5-rF-nxn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="名刺" id="5PB-Ma-8Bm"/>
+                    <navigationItem key="navigationItem" id="CHX-hZ-4fg"/>
                     <connections>
                         <outlet property="businessCard" destination="1ED-O5-e1g" id="uQA-Y9-rIh"/>
                         <outlet property="story" destination="Mp4-b6-oJE" id="qLk-zI-JnP"/>
@@ -659,4 +661,7 @@
             <point key="canvasLocation" x="-638" y="-103"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wFv-Rz-Kvu"/>
+    </inferredMetricsTieBreakers>
 </document>

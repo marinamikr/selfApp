@@ -16,6 +16,8 @@ class MakeAccountViewController: UIViewController  {
     @IBOutlet weak var userNameText: UITextField!
     @IBOutlet weak var iconImageView: UIImageView!
     var selectedImage:UIImage!
+    let userDefaults = UserDefaults.standard
+
     
     // インスタンス変数
     var DBRef:DatabaseReference!
@@ -83,7 +85,8 @@ class MakeAccountViewController: UIViewController  {
         } else {
             makeAleart(title: "全て入力してください", message: "全て入力してください", okText: "OK")
         }
-        
+        userDefaults.set(true, forKey: "isFirst")
+        userDefaults.synchronize()
     }
     
     
