@@ -86,8 +86,18 @@ class StoryViewController: UIViewController {
         DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data3)
         DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data4)
         
-        self.dismiss(animated: true, completion: nil)
-
+//        self.dismiss(animated: true, completion: nil)
+//        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
+//            let tabVC = self.presentingViewController?.presentingViewController?.presentingViewController?.tabBarController
+//            tabVC?.selectedIndex = 0
+//        })
+        
+        let tabVC = self.presentingViewController?.presentingViewController?.presentingViewController?.parent as! CustomUITabBarController
+        let tabVC = self.presentingViewController
+        
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
+            
+        })
     }
     
     /*
