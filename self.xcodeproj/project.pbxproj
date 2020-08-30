@@ -29,6 +29,9 @@
 		40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */; };
 		40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */; };
 		408C454324865DE900A0CF09 /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C454224865DE900A0CF09 /* CharacterSet.swift */; };
+		40B6070124FB72B500BEB87B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B606FF24FB72B500BEB87B /* CustomTableViewCell.swift */; };
+		40B6070224FB72B500BEB87B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B6070024FB72B500BEB87B /* CustomTableViewCell.xib */; };
+		40B6070424FB8D9600BEB87B /* PlofileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B6070324FB8D9600BEB87B /* PlofileViewController.swift */; };
 		40BD044823E97236009F8644 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD044723E97236009F8644 /* CameraViewController.swift */; };
 		40BD044A23E980F2009F8644 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD044923E980F2009F8644 /* IntroductionViewController.swift */; };
 		40BD045423E987A7009F8644 /* BusinessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD045223E987A7009F8644 /* BusinessCard.swift */; };
@@ -93,6 +96,9 @@
 		40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
 		408C454224865DE900A0CF09 /* CharacterSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
+		40B606FF24FB72B500BEB87B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		40B6070024FB72B500BEB87B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		40B6070324FB8D9600BEB87B /* PlofileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlofileViewController.swift; sourceTree = "<group>"; };
 		40BD044723E97236009F8644 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		40BD044923E980F2009F8644 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		40BD045223E987A7009F8644 /* BusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCard.swift; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 				40F886032405292E00969895 /* CustomUITabBarController.swift */,
 				40880373248FA878007504D4 /* LookCharacterViewController.swift */,
 				406BA24024A2017300B919A2 /* MakeAccountViewController.swift */,
+				40B6070324FB8D9600BEB87B /* PlofileViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -276,6 +283,8 @@
 				40F8860724052CE200969895 /* TreeView.xib */,
 				40EB063D240E6C09009521E4 /* Story.xib */,
 				40EB063F240E6C11009521E4 /* Story.swift */,
+				40B606FF24FB72B500BEB87B /* CustomTableViewCell.swift */,
+				40B6070024FB72B500BEB87B /* CustomTableViewCell.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -394,6 +403,7 @@
 				40F8860824052CE200969895 /* TreeView.xib in Resources */,
 				40EB063E240E6C09009521E4 /* Story.xib in Resources */,
 				4002C9E623E0357E0093666B /* GoogleService-Info.plist in Resources */,
+				40B6070224FB72B500BEB87B /* CustomTableViewCell.xib in Resources */,
 				40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */,
 				40F8860624052C9A00969895 /* BusinessCard.xib in Resources */,
 				405B382A23A8DA1800333CB8 /* Main.storyboard in Resources */,
@@ -531,6 +541,8 @@
 				4028DA1E23F9A44200F33004 /* TopViewController.swift in Sources */,
 				406BA24124A2017300B919A2 /* MakeAccountViewController.swift in Sources */,
 				40BD044A23E980F2009F8644 /* IntroductionViewController.swift in Sources */,
+				40B6070124FB72B500BEB87B /* CustomTableViewCell.swift in Sources */,
+				40B6070424FB8D9600BEB87B /* PlofileViewController.swift in Sources */,
 				4028DA1B23F2BFE800F33004 /* SettingViewController.swift in Sources */,
 				40FD48EB23B2E206005BFDB8 /* QRViewController.swift in Sources */,
 				405B385323A8E59100333CB8 /* RealmModel.swift in Sources */,

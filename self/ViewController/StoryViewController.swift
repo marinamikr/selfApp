@@ -16,7 +16,6 @@ class StoryViewController: UIViewController {
     var realm :Realm!
     var realmModelArray:Results<RealmModel>!
     
-    
     @IBOutlet var label: UILabel!
     @IBOutlet var textField1: UITextField!
     @IBOutlet var textField2: UITextField!
@@ -86,28 +85,26 @@ class StoryViewController: UIViewController {
         DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data3)
         DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data4)
         
-//        self.dismiss(animated: true, completion: nil)
-//        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
-//            let tabVC = self.presentingViewController?.presentingViewController?.presentingViewController?.tabBarController
-//            tabVC?.selectedIndex = 0
-//        })
+        //        self.dismiss(animated: true, completion: nil)
+        //        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
+        //            let tabVC = self.presentingViewController?.presentingViewController?.presentingViewController?.tabBarController
+        //            tabVC?.selectedIndex = 0
+        //        })
         
-        let tabVC = self.presentingViewController?.presentingViewController?.presentingViewController?.parent as! CustomUITabBarController
-        let tabVC = self.presentingViewController
-        
+        let customUITabBarController = self.presentingViewController?.presentingViewController?.presentingViewController as! CustomUITabBarController
         self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
-            
+            customUITabBarController.selectedIndex = 0
         })
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

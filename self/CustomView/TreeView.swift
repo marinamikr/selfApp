@@ -122,7 +122,7 @@ class TreeView: UIView {
         //        })
         var array = [String]()
         
-        DBRef.child("userData").child("8550A0A3-385E-4989-8C41-07F631C696BA").child("character").observe(.value, with: { (snapshot) in
+        DBRef.child("userData").child(Util.getUUID()).child("character").observe(.value, with: { (snapshot) in
             print("##",snapshot.value)
             for itemSnapShot in snapshot.children  {
                 let snap = itemSnapShot as! DataSnapshot
