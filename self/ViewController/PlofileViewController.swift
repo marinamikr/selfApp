@@ -79,8 +79,10 @@ class PlofileViewController: UIViewController {
     @IBAction func startButton(_ sender: AnyObject) {
         if userNameText.text != "" {
 //             && iconImageView.image !
-            DBRef.child("userData/\(Util.getUUID())/name").setValue("aaaaaaa")
-            DBRef.child("test/test/test").setValue("aaaaaaa")
+            
+            DBRef.child("userData/\(Util.getUUID())/name").setValue(userNameText.text)
+//            DBRef.child("userData").child(Util.getUUID()).child("name").setValue("datadata")
+            
             uploadIcon(name: userNameText.text!, pic: iconImageView.image!)
             makeAleart(title: "変更が完了しました", message: "", okText: "OK")
         } else {

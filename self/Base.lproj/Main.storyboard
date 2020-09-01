@@ -478,7 +478,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pi-ox-fvs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yazurushi.png" translatesAutoresizingMaskIntoConstraints="NO" id="9pi-ox-fvs">
                                 <rect key="frame" x="200" y="191" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -751,4 +751,7 @@
             <point key="canvasLocation" x="-638" y="-103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="yazurushi.png" width="44" height="44"/>
+    </resources>
 </document>
