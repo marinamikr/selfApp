@@ -11,6 +11,11 @@ import Firebase
 
 class TreeView: UIView {
     
+    @IBOutlet var itsuLabel: UILabel!
+    @IBOutlet var dareLabel: UILabel!
+    @IBOutlet var dokoLabel: UILabel!
+    @IBOutlet var nanishitaTextView: UITextView!
+    
     private var labelArray: [UILabel]
     
     override init(frame: CGRect) {
@@ -93,7 +98,7 @@ class TreeView: UIView {
             let x: Double = angle / 2 + angle * Double(i)
             //            print(x)
             let posX = Double(radius) * sin(x * (Double.pi / 180)) + centerX
-            let posY = centerY - Double(radius) * cos(x * (Double.pi / 180))
+            let posY = 50 - Double(radius) * cos(x * (Double.pi / 180))
             //            print(String(posX) + "," + String(posY))
             let label = UILabel()
             label.frame = CGRect(x: posX - labelWidth / 2, y: posY - labelHeight / 2, width: labelWidth, height: labelHeight)
@@ -121,15 +126,27 @@ class TreeView: UIView {
         //            }
         //        })
         var array = [String]()
-        
+        var characters = [Character]()
         DBRef.child("userData").child(Util.getUUID()).child("character").observe(.value, with: { (snapshot) in
-            print("##",snapshot.value)
+            print("##", snapshot.value)
             for itemSnapShot in snapshot.children  {
                 let snap = itemSnapShot as! DataSnapshot
                 let data = snap.value as! [String : AnyObject]
-                print("####",data["key"])
-                let post = data["key"] as! String
-                array.append(post)
+                
+                let key = data["key"] as! String
+                let itsu = data["itsu"] as! String
+                let dokode = data["dokode"] as! String
+                let dareto = data["dareto"] as! String
+                let nanishita = data["nanishita"] as! String
+                let sonota = data["sonota"] as! String
+                let character = Character(key: key,
+                                          itsu: itsu,
+                                          dokode: dokode,
+                                          dareto: dareto,
+                                          nanishita: nanishita,
+                                          sonota: sonota)
+                characters.append(character)
+                array.append(key)
                 //                var post: CharacterSet = CharacterSet(charactersIn: data["key"] as! String)
                 //                self.postArray.append(post)
                 
@@ -143,8 +160,13 @@ class TreeView: UIView {
                 
             }
             
-            //            for文で取り出すarrayの中身を
-            //            labelarrayの一個づつに入れてく
+            if let story = characters.randomElement() {
+                self.itsuLabel.text = story.itsu
+                self.dareLabel.text = story.dareto
+                self.dokoLabel.text = story.dokode
+                self.nanishitaTextView.text = story.nanishita
+            }
+            
         })
         
         

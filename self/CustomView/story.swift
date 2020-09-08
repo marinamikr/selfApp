@@ -11,7 +11,20 @@ class Story: UIView {
     @IBOutlet var itsuLabel: UILabel!
     @IBOutlet var dareLabel: UILabel!
     @IBOutlet var dokoLabel: UILabel!
-    @IBOutlet var nanisitaView: UIView!
-
+    @IBOutlet var nanishitaTextView: UITextView!
     
+//    override init(frame: CGRect) {
+//        super.init()
+//    }
+    
+    func set(character:Character) {
+        itsuLabel.text = character.itsu
+        dareLabel.text = character.dareto
+        dokoLabel.text = character.dokode
+        nanishitaTextView.text = character.nanishita
+    }
+    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
 }

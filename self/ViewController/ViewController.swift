@@ -129,7 +129,7 @@ class ViewController: UIViewController {
                 self.businessCard.treeView.alpha = 0
             }
             
-            self.story.isHidden = false
+//            self.story.isHidden = false
         })
         
     }

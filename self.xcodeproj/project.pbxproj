@@ -10,6 +10,7 @@
 		2A8B191CAE94F9CBE402658F /* Pods_self_selfUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6341E592CE85E7C826C342 /* Pods_self_selfUITests.framework */; };
 		4002C9E623E0357E0093666B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4002C9E523E0357E0093666B /* GoogleService-Info.plist */; };
 		4020983D23E0394A0030A2E8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020983C23E0394A0030A2E8 /* Util.swift */; };
+		40223E4725079C53008B611B /* Icon metro-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 40223E4625079C53008B611B /* Icon metro-profile.png */; };
 		4028DA1823F2BEE100F33004 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028DA1623F2BEE100F33004 /* TreeView.swift */; };
 		4028DA1B23F2BFE800F33004 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028DA1A23F2BFE800F33004 /* SettingViewController.swift */; };
 		4028DA1E23F9A44200F33004 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028DA1D23F9A44200F33004 /* TopViewController.swift */; };
@@ -71,6 +72,7 @@
 		3F1854CD5B63428161F73D38 /* Pods_self.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_self.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4002C9E523E0357E0093666B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4020983C23E0394A0030A2E8 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		40223E4625079C53008B611B /* Icon metro-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon metro-profile.png"; sourceTree = "<group>"; };
 		4028DA1623F2BEE100F33004 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
 		4028DA1A23F2BFE800F33004 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		4028DA1D23F9A44200F33004 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				405B383023A8DA1A00333CB8 /* Info.plist */,
 				405B385223A8E59100333CB8 /* RealmModel.swift */,
 				40BD97C523CDD70F005F45FB /* yazurushi.png */,
+				40223E4625079C53008B611B /* Icon metro-profile.png */,
 				4002C9E523E0357E0093666B /* GoogleService-Info.plist */,
 			);
 			path = self;
@@ -277,10 +280,10 @@
 		40BD044B23E986E0009F8644 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				40BD045223E987A7009F8644 /* BusinessCard.swift */,
 				4028DA1623F2BEE100F33004 /* TreeView.swift */,
-				40F8860524052C9A00969895 /* BusinessCard.xib */,
 				40F8860724052CE200969895 /* TreeView.xib */,
+				40BD045223E987A7009F8644 /* BusinessCard.swift */,
+				40F8860524052C9A00969895 /* BusinessCard.xib */,
 				40EB063D240E6C09009521E4 /* Story.xib */,
 				40EB063F240E6C11009521E4 /* Story.swift */,
 				40B606FF24FB72B500BEB87B /* CustomTableViewCell.swift */,
@@ -407,6 +410,7 @@
 				40BD97C623CDD70F005F45FB /* yazurushi.png in Resources */,
 				40F8860624052C9A00969895 /* BusinessCard.xib in Resources */,
 				405B382A23A8DA1800333CB8 /* Main.storyboard in Resources */,
+				40223E4725079C53008B611B /* Icon metro-profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

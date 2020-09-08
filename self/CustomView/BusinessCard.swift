@@ -24,6 +24,8 @@ class BusinessCard: UIView {
     @IBOutlet var nameLabel: UILabel!
     var DBRef:DatabaseReference!
 
+    @IBOutlet var textField:UITextField!
+
     
     //    override init(frame: CGRect) {
     //        super.init(frame: frame)
@@ -88,4 +90,10 @@ class BusinessCard: UIView {
             }
         }
     }
+    
+    @IBAction func addButton() {
+           let data = ["key": textField.text,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
+           
+           DBRef.child("userData").child(Util.getUUID()).child("selfCharacter").childByAutoId().setValue(data)
+       }
 }
