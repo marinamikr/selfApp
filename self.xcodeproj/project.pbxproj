@@ -29,6 +29,7 @@
 		40880374248FA878007504D4 /* LookCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40880373248FA878007504D4 /* LookCharacterViewController.swift */; };
 		40887C5A23C498C900BF05F7 /* SelectCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */; };
 		40887C5C23C49E9C00BF05F7 /* RouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */; };
+		408B511F25109F5700FCCC06 /* Icon feather-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 408B511E25109F5700FCCC06 /* Icon feather-settings.png */; };
 		408C454324865DE900A0CF09 /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C454224865DE900A0CF09 /* CharacterSet.swift */; };
 		40B6070124FB72B500BEB87B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B606FF24FB72B500BEB87B /* CustomTableViewCell.swift */; };
 		40B6070224FB72B500BEB87B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B6070024FB72B500BEB87B /* CustomTableViewCell.xib */; };
@@ -97,6 +98,7 @@
 		40880373248FA878007504D4 /* LookCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5923C498C900BF05F7 /* SelectCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterViewController.swift; sourceTree = "<group>"; };
 		40887C5B23C49E9C00BF05F7 /* RouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewController.swift; sourceTree = "<group>"; };
+		408B511E25109F5700FCCC06 /* Icon feather-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon feather-settings.png"; sourceTree = "<group>"; };
 		408C454224865DE900A0CF09 /* CharacterSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
 		40B606FF24FB72B500BEB87B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		40B6070024FB72B500BEB87B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				405B383023A8DA1A00333CB8 /* Info.plist */,
 				405B385223A8E59100333CB8 /* RealmModel.swift */,
 				40BD97C523CDD70F005F45FB /* yazurushi.png */,
+				408B511E25109F5700FCCC06 /* Icon feather-settings.png */,
 				40223E4625079C53008B611B /* Icon metro-profile.png */,
 				4002C9E523E0357E0093666B /* GoogleService-Info.plist */,
 			);
@@ -402,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				405B382F23A8DA1A00333CB8 /* LaunchScreen.storyboard in Resources */,
+				408B511F25109F5700FCCC06 /* Icon feather-settings.png in Resources */,
 				405B382C23A8DA1A00333CB8 /* Assets.xcassets in Resources */,
 				40F8860824052CE200969895 /* TreeView.xib in Resources */,
 				40EB063E240E6C09009521E4 /* Story.xib in Resources */,

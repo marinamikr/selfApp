@@ -91,7 +91,7 @@
                 <outlet property="dareLabel" destination="yqt-gB-hzJ" id="zAT-07-onG"/>
                 <outlet property="dokoLabel" destination="r6J-aj-6jP" id="72O-I5-CYJ"/>
                 <outlet property="itsuLabel" destination="21l-yQ-Jzd" id="ppy-F6-eol"/>
-                <outlet property="nanisitaView" destination="6Mk-hH-Mco" id="ScL-we-EdG"/>
+                <outlet property="nanishitaTextView" destination="6Mk-hH-Mco" id="7R4-ds-Enj"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="-42.857142857142854"/>
         </view>

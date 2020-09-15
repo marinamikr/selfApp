@@ -165,6 +165,7 @@ class TreeView: UIView {
                 self.dareLabel.text = story.dareto
                 self.dokoLabel.text = story.dokode
                 self.nanishitaTextView.text = story.nanishita
+                print(self.itsuLabel)
             }
             
         })

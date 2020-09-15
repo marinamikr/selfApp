@@ -81,13 +81,13 @@ class StoryViewController: UIViewController {
         print(saveData5.sonota)
         
         let data = ["key": label.text,"itsu": textField1.text,"dokode": textField2.text,"dareto": textField3.text,"nanishita": textView1.text,"sonota": textView2.text] as [String : Any]
-        let data2 = ["key": text2,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
-        let data3 = ["key": text3,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
-        let data4 = ["key": text4,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
+//        let data2 = ["key": text2,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
+//        let data3 = ["key": text3,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
+//        let data4 = ["key": text4,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
         DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data)
-        DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data2)
-        DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data3)
-        DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data4)
+//        DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data2)
+//        DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data3)
+//        DBRef.child("userData").child(id).child("character").childByAutoId().setValue(data4)
         
         //        self.dismiss(animated: true, completion: nil)
         //        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {

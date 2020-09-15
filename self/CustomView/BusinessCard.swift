@@ -55,6 +55,7 @@ class BusinessCard: UIView {
     }
     
     func loadNib() {
+        DBRef = Database.database().reference()
         if let view = Bundle(for: type(of: self)).loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? UIView {
             print("BusinessCard")
             print(self.bounds)
@@ -96,4 +97,6 @@ class BusinessCard: UIView {
            
            DBRef.child("userData").child(Util.getUUID()).child("selfCharacter").childByAutoId().setValue(data)
        }
+    
+    
 }
