@@ -25,28 +25,28 @@ class PlofileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "アカウント作成"
+        self.navigationItem.title = "アカウント変更画面"
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.gray]
         userNameText.delegate = self as! UITextFieldDelegate
         //インスタンスを作成
         DBRef = Database.database().reference()
     }
-//
-//
-//    @IBAction func chooseIcon(_ sender: Any) {
-//        // カメラロールが利用可能か？
-//        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-//            // 写真を選ぶビュー
-//            let pickerView = UIImagePickerController()
-//            // 写真の選択元をカメラロールにする
-//            // 「.camera」にすればカメラを起動できる
-//            pickerView.sourceType = .photoLibrary
-//            // デリゲート
-//            pickerView.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
-//            // ビューに表示
-//            self.present(pickerView, animated: true)
-//        }
-//    }
+
+
+    @IBAction func chooseIcon(_ sender: Any) {
+        // カメラロールが利用可能か？
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            // 写真を選ぶビュー
+            let pickerView = UIImagePickerController()
+            // 写真の選択元をカメラロールにする
+            // 「.camera」にすればカメラを起動できる
+            pickerView.sourceType = .photoLibrary
+            // デリゲート
+            pickerView.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+            // ビューに表示
+            self.present(pickerView, animated: true)
+        }
+    }
     
     func uploadIcon(name: String,pic: UIImage){
         // strageの一番トップのReferenceを指定
