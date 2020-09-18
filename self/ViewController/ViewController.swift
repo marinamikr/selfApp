@@ -97,7 +97,7 @@ class ViewController: UIViewController {
        }
     func getData()  {
            DBRef.child("userData").child(Util.getUUID()).child("selfCharacter").observe(.value, with: { (snapshot) in
-               
+               self.characterArray = []
                for itemSnapShot in snapshot.children  {
                    let snap = itemSnapShot as! DataSnapshot
                    let data = snap.value as! [String : AnyObject]

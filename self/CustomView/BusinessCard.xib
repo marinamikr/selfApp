@@ -78,10 +78,9 @@
                     </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0to-M4-XpW">
-                    <rect key="frame" x="109" y="25" width="102" height="49"/>
+                    <rect key="frame" x="77" y="27" width="166" height="24"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="49" id="Na4-Q8-Dbc"/>
-                        <constraint firstAttribute="width" constant="102" id="xFN-lO-RdI"/>
+                        <constraint firstAttribute="width" constant="166" id="ben-WY-s7T"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
                     <nil key="textColor"/>
@@ -122,10 +121,11 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="C7P-WK-hXH" firstAttribute="top" secondItem="0to-M4-XpW" secondAttribute="bottom" constant="33" id="3a9-ah-EU5"/>
+                <constraint firstItem="0to-M4-XpW" firstAttribute="centerX" secondItem="C7P-WK-hXH" secondAttribute="centerX" id="4Vd-M1-osR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="C7P-WK-hXH" secondAttribute="trailing" constant="20" id="Ffx-hc-evy"/>
                 <constraint firstItem="nVo-0t-ixh" firstAttribute="top" secondItem="jyF-UK-Sg2" secondAttribute="bottom" constant="32.666666666666657" id="Fry-63-zzR"/>
                 <constraint firstItem="Fb7-cx-MlC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GqX-yF-huh"/>
-                <constraint firstItem="C7P-WK-hXH" firstAttribute="top" secondItem="0to-M4-XpW" secondAttribute="bottom" constant="10" id="JMa-Wh-Pnt"/>
                 <constraint firstItem="6Ih-hA-8Mi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JmH-1N-SHr"/>
                 <constraint firstItem="Fb7-cx-MlC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RFZ-ea-4Ts"/>
                 <constraint firstItem="Fb7-cx-MlC" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="aB4-vB-QcA"/>
@@ -133,12 +133,11 @@
                 <constraint firstItem="Fb7-cx-MlC" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fKt-S0-1eX"/>
                 <constraint firstItem="jyF-UK-Sg2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="h9D-SN-gjj"/>
                 <constraint firstItem="6Ih-hA-8Mi" firstAttribute="top" secondItem="nVo-0t-ixh" secondAttribute="bottom" constant="25" id="hsi-x9-dOK"/>
+                <constraint firstItem="0to-M4-XpW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="j3E-tY-v3g"/>
                 <constraint firstItem="6Ih-hA-8Mi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="k9g-QU-iyq"/>
-                <constraint firstItem="0to-M4-XpW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="kz6-bm-myM"/>
                 <constraint firstItem="nVo-0t-ixh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qyO-82-TOD"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jyF-UK-Sg2" secondAttribute="trailing" constant="20" id="u9S-Pu-bLA"/>
                 <constraint firstItem="jyF-UK-Sg2" firstAttribute="top" secondItem="C7P-WK-hXH" secondAttribute="bottom" constant="30.670000000000002" id="wZx-gs-LZa"/>
-                <constraint firstItem="0to-M4-XpW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wn9-Cg-tK6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
