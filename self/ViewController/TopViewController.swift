@@ -25,6 +25,7 @@ class TopViewController: UIViewController {
         
     }
     
+    
     func upload(name: String) {
         let ref = Database.database().reference()
         let data = ["name": name]

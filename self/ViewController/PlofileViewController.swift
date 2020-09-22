@@ -77,17 +77,17 @@ class PlofileViewController: UIViewController {
     }
     
     @IBAction func startButton(_ sender: AnyObject) {
-        if userNameText.text != "" {
-//             && iconImageView.image !
-            
+//        if userNameText.text != "" {
+////             && iconImageView.image !
+        iconImageView.image = UIImage(named: "profileIicon.png")
             DBRef.child("userData/\(Util.getUUID())/name").setValue(userNameText.text)
 //            DBRef.child("userData").child(Util.getUUID()).child("name").setValue("datadata")
             
-            uploadIcon(name: userNameText.text!, pic: iconImageView.image!)
+         uploadIcon(name: userNameText.text!, pic: iconImageView.image!)
             makeAleart(title: "変更が完了しました", message: "", okText: "OK")
-        } else {
-//            makeAleart(title: "全て入力してください", message: "全て入力してください", okText: "OK")
-        }
+//        } else {
+////            makeAleart(title: "全て入力してください", message: "全て入力してください", okText: "OK")
+//        }
         
     }
     

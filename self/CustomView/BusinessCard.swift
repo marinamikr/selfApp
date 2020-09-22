@@ -93,6 +93,8 @@ class BusinessCard: UIView {
     }
     
     @IBAction func addButton() {
+        textField.endEditing(true)
+
            let data = ["key": textField.text,"itsu": "","dokode": "","dareto": "","nanishita": "","sonota": ""] as [String : Any]
            
            DBRef.child("userData").child(Util.getUUID()).child("selfCharacter").childByAutoId().setValue(data)
