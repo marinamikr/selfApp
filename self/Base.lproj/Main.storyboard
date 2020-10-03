@@ -15,97 +15,300 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtf-rx-Feu">
-                                <rect key="frame" x="171" y="197" width="142" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ZQ-RK-Acr">
-                                <rect key="frame" x="171" y="301" width="142" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="80v-GI-tCk">
-                                <rect key="frame" x="171" y="247" width="142" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsD-CA-Ego">
-                                <rect key="frame" x="181" y="239" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcg-4w-sfQ">
-                                <rect key="frame" x="139" y="109" width="96" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Db8-Qn-c2e">
-                                <rect key="frame" x="171" y="355" width="142" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJe-hM-F5y">
-                                <rect key="frame" x="203" y="421" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="saveButton" destination="ZZ5-ds-0gu" eventType="touchUpInside" id="zrp-Pu-FAf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="キーワード入力" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljf-Rm-zZv">
-                                <rect key="frame" x="103" y="42" width="157" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
-                                <color key="textColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-eD-bAd">
-                                <rect key="frame" x="107" y="202" width="17" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sD-3n-JbR">
-                                <rect key="frame" x="107" y="252" width="17" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qc-sp-0qh">
-                                <rect key="frame" x="107" y="306" width="17" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6e-vo-eUI">
-                                <rect key="frame" x="107" y="360" width="17" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-ac-cz1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キーワード入力" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljf-Rm-zZv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="75.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
+                                        <color key="textColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcg-4w-sfQ">
+                                        <rect key="frame" x="0.0" y="75.666666666666671" width="375" height="76.000000000000014"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AO-Jx-09v" userLabel="View9">
+                                        <rect key="frame" x="0.0" y="151.66666666666666" width="375" height="75.666666666666657"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukH-Cc-MfW" userLabel="Stack View6">
+                                        <rect key="frame" x="0.0" y="227.33333333333334" width="375" height="38.000000000000028"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdv-nr-dHd" userLabel="View1">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="38"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-eD-bAd">
+                                                <rect key="frame" x="75" y="0.0" width="37.666666666666657" height="38"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtf-rx-Feu">
+                                                <rect key="frame" x="112.66666666666667" y="0.0" width="187.33333333333331" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45c-2E-8AB" userLabel="View2">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="38"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="vtf-rx-Feu" secondAttribute="bottom" id="3ny-ix-wkN"/>
+                                            <constraint firstItem="vOo-eD-bAd" firstAttribute="width" secondItem="ukH-Cc-MfW" secondAttribute="width" multiplier="0.1" id="6ng-qx-7fK"/>
+                                            <constraint firstAttribute="bottom" secondItem="vOo-eD-bAd" secondAttribute="bottom" id="8pZ-Zs-O3f"/>
+                                            <constraint firstItem="vtf-rx-Feu" firstAttribute="top" secondItem="ukH-Cc-MfW" secondAttribute="top" id="9wX-gU-YHT"/>
+                                            <constraint firstItem="Xdv-nr-dHd" firstAttribute="top" secondItem="ukH-Cc-MfW" secondAttribute="top" id="DXn-Us-VG9"/>
+                                            <constraint firstItem="Xdv-nr-dHd" firstAttribute="leading" secondItem="ukH-Cc-MfW" secondAttribute="leading" id="FU3-H7-Fvi"/>
+                                            <constraint firstAttribute="bottom" secondItem="45c-2E-8AB" secondAttribute="bottom" id="H0y-HE-Wd1"/>
+                                            <constraint firstItem="vOo-eD-bAd" firstAttribute="top" secondItem="ukH-Cc-MfW" secondAttribute="top" id="Hab-cQ-zN0"/>
+                                            <constraint firstItem="Xdv-nr-dHd" firstAttribute="width" secondItem="ukH-Cc-MfW" secondAttribute="width" multiplier="0.2" id="S36-uA-RG3"/>
+                                            <constraint firstItem="vtf-rx-Feu" firstAttribute="width" secondItem="ukH-Cc-MfW" secondAttribute="width" multiplier="0.5" id="SDx-QK-9t4"/>
+                                            <constraint firstItem="45c-2E-8AB" firstAttribute="top" secondItem="ukH-Cc-MfW" secondAttribute="top" id="WMd-rc-HZF"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xdv-nr-dHd" secondAttribute="bottom" id="g08-ca-H6y"/>
+                                            <constraint firstAttribute="trailing" secondItem="45c-2E-8AB" secondAttribute="trailing" id="yWu-jw-H7W"/>
+                                            <constraint firstItem="45c-2E-8AB" firstAttribute="width" secondItem="ukH-Cc-MfW" secondAttribute="width" multiplier="0.2" id="z8c-43-dyh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnJ-aO-P0h" userLabel="View14">
+                                        <rect key="frame" x="0.0" y="265.33333333333331" width="375" height="15"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-SE-Lft" userLabel="Stack View2">
+                                        <rect key="frame" x="0.0" y="280.33333333333331" width="375" height="38"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-5o-Gy8" userLabel="View3">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="38"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sD-3n-JbR">
+                                                <rect key="frame" x="75" y="0.0" width="37.666666666666657" height="38"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="80v-GI-tCk">
+                                                <rect key="frame" x="112.66666666666667" y="0.0" width="187.33333333333331" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62B-fR-2w0" userLabel="View4">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="38"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ArD-5o-Gy8" firstAttribute="leading" secondItem="X4F-SE-Lft" secondAttribute="leading" id="0Yl-OL-K2B"/>
+                                            <constraint firstItem="80v-GI-tCk" firstAttribute="width" secondItem="X4F-SE-Lft" secondAttribute="width" multiplier="0.5" id="4Nq-M7-td6"/>
+                                            <constraint firstAttribute="bottom" secondItem="1sD-3n-JbR" secondAttribute="bottom" id="8sf-JU-qr8"/>
+                                            <constraint firstItem="1sD-3n-JbR" firstAttribute="width" secondItem="X4F-SE-Lft" secondAttribute="width" multiplier="0.1" id="D3r-Lg-IOr"/>
+                                            <constraint firstItem="1sD-3n-JbR" firstAttribute="top" secondItem="X4F-SE-Lft" secondAttribute="top" id="ILZ-V7-pZP"/>
+                                            <constraint firstItem="62B-fR-2w0" firstAttribute="top" secondItem="X4F-SE-Lft" secondAttribute="top" id="Ms8-97-N7u"/>
+                                            <constraint firstItem="62B-fR-2w0" firstAttribute="width" secondItem="X4F-SE-Lft" secondAttribute="width" multiplier="0.2" id="N1U-wq-liR"/>
+                                            <constraint firstAttribute="bottom" secondItem="80v-GI-tCk" secondAttribute="bottom" id="QNx-SP-aEQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="ArD-5o-Gy8" secondAttribute="bottom" id="XvR-Gc-ORQ"/>
+                                            <constraint firstItem="ArD-5o-Gy8" firstAttribute="top" secondItem="X4F-SE-Lft" secondAttribute="top" id="iNO-hL-yhn"/>
+                                            <constraint firstItem="80v-GI-tCk" firstAttribute="top" secondItem="X4F-SE-Lft" secondAttribute="top" id="ifm-pE-rQ8"/>
+                                            <constraint firstAttribute="bottom" secondItem="62B-fR-2w0" secondAttribute="bottom" id="kP1-KB-uXo"/>
+                                            <constraint firstItem="ArD-5o-Gy8" firstAttribute="width" secondItem="X4F-SE-Lft" secondAttribute="width" multiplier="0.2" id="kRy-Tr-TB2"/>
+                                            <constraint firstAttribute="trailing" secondItem="62B-fR-2w0" secondAttribute="trailing" id="qPg-vQ-Pg1"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgO-Nw-vc1" userLabel="View15">
+                                        <rect key="frame" x="0.0" y="318.33333333333331" width="375" height="15.333333333333314"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-fP-kwy" userLabel="Stack View3">
+                                        <rect key="frame" x="0.0" y="333.66666666666669" width="375" height="37.666666666666686"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e01-Jh-GSB" userLabel="View5">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="37.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qc-sp-0qh">
+                                                <rect key="frame" x="75" y="0.0" width="37.666666666666657" height="37.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ZQ-RK-Acr">
+                                                <rect key="frame" x="112.66666666666667" y="0.0" width="187.33333333333331" height="37.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWO-7C-6FS" userLabel="View6">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="37.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3Qc-sp-0qh" firstAttribute="width" secondItem="osJ-fP-kwy" secondAttribute="width" multiplier="0.1" id="4DR-dl-cKa"/>
+                                            <constraint firstItem="3Qc-sp-0qh" firstAttribute="top" secondItem="osJ-fP-kwy" secondAttribute="top" id="6Nj-cz-mAT"/>
+                                            <constraint firstAttribute="bottom" secondItem="e01-Jh-GSB" secondAttribute="bottom" id="7wk-sg-m34"/>
+                                            <constraint firstAttribute="trailing" secondItem="hWO-7C-6FS" secondAttribute="trailing" id="Dvd-Vr-OGq"/>
+                                            <constraint firstAttribute="bottom" secondItem="3Qc-sp-0qh" secondAttribute="bottom" id="IId-oY-sUO"/>
+                                            <constraint firstItem="e01-Jh-GSB" firstAttribute="width" secondItem="osJ-fP-kwy" secondAttribute="width" multiplier="0.2" id="NOy-gn-dLb"/>
+                                            <constraint firstItem="e01-Jh-GSB" firstAttribute="top" secondItem="osJ-fP-kwy" secondAttribute="top" id="Wbv-0s-JGS"/>
+                                            <constraint firstItem="hWO-7C-6FS" firstAttribute="top" secondItem="osJ-fP-kwy" secondAttribute="top" id="Xxx-x9-nDO"/>
+                                            <constraint firstAttribute="bottom" secondItem="hWO-7C-6FS" secondAttribute="bottom" id="Y2P-Cs-5Lz"/>
+                                            <constraint firstAttribute="bottom" secondItem="5ZQ-RK-Acr" secondAttribute="bottom" id="YGg-1Q-AAf"/>
+                                            <constraint firstItem="e01-Jh-GSB" firstAttribute="leading" secondItem="osJ-fP-kwy" secondAttribute="leading" id="cSC-9t-qo5"/>
+                                            <constraint firstItem="5ZQ-RK-Acr" firstAttribute="width" secondItem="osJ-fP-kwy" secondAttribute="width" multiplier="0.5" id="nWN-3l-Gol"/>
+                                            <constraint firstItem="hWO-7C-6FS" firstAttribute="width" secondItem="osJ-fP-kwy" secondAttribute="width" multiplier="0.2" id="q2O-bR-Wm5"/>
+                                            <constraint firstItem="5ZQ-RK-Acr" firstAttribute="top" secondItem="osJ-fP-kwy" secondAttribute="top" id="upJ-LA-fQx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eay-0h-XY4" userLabel="View16">
+                                        <rect key="frame" x="0.0" y="371.33333333333331" width="375" height="15.333333333333314"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWX-Gi-yOX" userLabel="Stack View4">
+                                        <rect key="frame" x="0.0" y="386.66666666666669" width="375" height="37.666666666666686"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Y9-JLD" userLabel="View7">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="37.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6e-vo-eUI">
+                                                <rect key="frame" x="75" y="0.0" width="37.666666666666657" height="37.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Db8-Qn-c2e">
+                                                <rect key="frame" x="112.66666666666667" y="0.0" width="187.33333333333331" height="37.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCP-dY-D73" userLabel="View8">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="37.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="IHD-Y9-JLD" firstAttribute="leading" secondItem="GWX-Gi-yOX" secondAttribute="leading" id="0r2-pc-xc9"/>
+                                            <constraint firstAttribute="bottom" secondItem="b6e-vo-eUI" secondAttribute="bottom" id="1Z1-22-ayE"/>
+                                            <constraint firstItem="Db8-Qn-c2e" firstAttribute="top" secondItem="GWX-Gi-yOX" secondAttribute="top" id="4vu-jM-5cM"/>
+                                            <constraint firstItem="Db8-Qn-c2e" firstAttribute="width" secondItem="GWX-Gi-yOX" secondAttribute="width" multiplier="0.5" id="A5E-v4-icZ"/>
+                                            <constraint firstItem="b6e-vo-eUI" firstAttribute="top" secondItem="GWX-Gi-yOX" secondAttribute="top" id="BAe-qp-JTn"/>
+                                            <constraint firstAttribute="bottom" secondItem="aCP-dY-D73" secondAttribute="bottom" id="NpN-zt-l1i"/>
+                                            <constraint firstItem="aCP-dY-D73" firstAttribute="top" secondItem="GWX-Gi-yOX" secondAttribute="top" id="VgK-R5-syL"/>
+                                            <constraint firstAttribute="bottom" secondItem="Db8-Qn-c2e" secondAttribute="bottom" id="Wep-5E-aKd"/>
+                                            <constraint firstAttribute="bottom" secondItem="IHD-Y9-JLD" secondAttribute="bottom" id="Xjn-7a-69D"/>
+                                            <constraint firstItem="IHD-Y9-JLD" firstAttribute="width" secondItem="GWX-Gi-yOX" secondAttribute="width" multiplier="0.2" id="Xtr-Md-PlN"/>
+                                            <constraint firstAttribute="trailing" secondItem="aCP-dY-D73" secondAttribute="trailing" id="cjt-0R-xW6"/>
+                                            <constraint firstItem="b6e-vo-eUI" firstAttribute="width" secondItem="GWX-Gi-yOX" secondAttribute="width" multiplier="0.1" id="hXO-tq-WCA"/>
+                                            <constraint firstItem="aCP-dY-D73" firstAttribute="width" secondItem="GWX-Gi-yOX" secondAttribute="width" multiplier="0.2" id="mwO-dH-yTJ"/>
+                                            <constraint firstItem="IHD-Y9-JLD" firstAttribute="top" secondItem="GWX-Gi-yOX" secondAttribute="top" id="sla-GW-oGT"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7l-tX-aKF" userLabel="View17">
+                                        <rect key="frame" x="0.0" y="424.33333333333331" width="375" height="76"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-lS-brc" userLabel="Stack View5">
+                                        <rect key="frame" x="0.0" y="500.33333333333326" width="375" height="53"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-Rj-J1c" userLabel="View11">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="53"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJe-hM-F5y">
+                                                <rect key="frame" x="150" y="0.0" width="75" height="53"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="saveButton" destination="ZZ5-ds-0gu" eventType="touchUpInside" id="zrp-Pu-FAf"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHH-nX-Eis" userLabel="View12">
+                                                <rect key="frame" x="225" y="0.0" width="150" height="53"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HV2-Rj-J1c" firstAttribute="leading" secondItem="rHv-lS-brc" secondAttribute="leading" id="1Zd-b9-5b6"/>
+                                            <constraint firstAttribute="trailing" secondItem="EHH-nX-Eis" secondAttribute="trailing" id="5Bd-Gq-oZa"/>
+                                            <constraint firstAttribute="bottom" secondItem="HV2-Rj-J1c" secondAttribute="bottom" id="5Bt-bd-T9e"/>
+                                            <constraint firstItem="xJe-hM-F5y" firstAttribute="top" secondItem="rHv-lS-brc" secondAttribute="top" id="7ar-80-PDF"/>
+                                            <constraint firstAttribute="bottom" secondItem="EHH-nX-Eis" secondAttribute="bottom" id="DlM-Z7-YsA"/>
+                                            <constraint firstItem="EHH-nX-Eis" firstAttribute="top" secondItem="rHv-lS-brc" secondAttribute="top" id="MbU-Vo-QxH"/>
+                                            <constraint firstAttribute="bottom" secondItem="xJe-hM-F5y" secondAttribute="bottom" id="Q9a-ax-9Oc"/>
+                                            <constraint firstItem="HV2-Rj-J1c" firstAttribute="top" secondItem="rHv-lS-brc" secondAttribute="top" id="VZw-nM-fbZ"/>
+                                            <constraint firstItem="HV2-Rj-J1c" firstAttribute="width" secondItem="rHv-lS-brc" secondAttribute="width" multiplier="0.4" id="fBM-aW-TV0"/>
+                                            <constraint firstItem="xJe-hM-F5y" firstAttribute="width" secondItem="rHv-lS-brc" secondAttribute="width" multiplier="0.2" id="nHM-Hp-qeG"/>
+                                            <constraint firstItem="EHH-nX-Eis" firstAttribute="width" secondItem="rHv-lS-brc" secondAttribute="width" multiplier="0.4" id="nIT-oN-gFp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRE-Ab-B5g" userLabel="View10">
+                                        <rect key="frame" x="0.0" y="553.33333333333337" width="375" height="204.66666666666663"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jRE-Ab-B5g" secondAttribute="bottom" id="17c-Fp-INq"/>
+                                    <constraint firstAttribute="trailing" secondItem="jRE-Ab-B5g" secondAttribute="trailing" id="1Yy-kD-Dzh"/>
+                                    <constraint firstAttribute="trailing" secondItem="kcg-4w-sfQ" secondAttribute="trailing" id="1jc-Cu-bU4"/>
+                                    <constraint firstItem="jRE-Ab-B5g" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="428-G0-DoD"/>
+                                    <constraint firstItem="ukH-Cc-MfW" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.05" id="6gj-XA-uLa"/>
+                                    <constraint firstAttribute="trailing" secondItem="GWX-Gi-yOX" secondAttribute="trailing" id="DDG-ZG-7AT"/>
+                                    <constraint firstItem="4AO-Jx-09v" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.1" id="GGU-7N-CeZ"/>
+                                    <constraint firstItem="jRE-Ab-B5g" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.27" id="H42-aZ-fuw"/>
+                                    <constraint firstItem="eay-0h-XY4" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.02" id="Ii9-dE-dgd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ukH-Cc-MfW" secondAttribute="trailing" id="IsL-XC-2FP"/>
+                                    <constraint firstItem="h7l-tX-aKF" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.1" id="Kp4-cX-IgN"/>
+                                    <constraint firstItem="rHv-lS-brc" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.07" id="L1j-Yw-WYC"/>
+                                    <constraint firstItem="GWX-Gi-yOX" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="NpS-ra-Iw0"/>
+                                    <constraint firstItem="fnJ-aO-P0h" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="OwZ-tL-QRS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ljf-Rm-zZv" secondAttribute="trailing" id="P7G-3Y-F4p"/>
+                                    <constraint firstItem="osJ-fP-kwy" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="PiV-NF-8FI"/>
+                                    <constraint firstItem="X4F-SE-Lft" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.05" id="PvM-b8-vT9"/>
+                                    <constraint firstItem="Ljf-Rm-zZv" firstAttribute="top" secondItem="ncg-ac-cz1" secondAttribute="top" id="TgK-9x-VSf"/>
+                                    <constraint firstItem="GWX-Gi-yOX" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.05" id="UbC-WC-8P2"/>
+                                    <constraint firstAttribute="trailing" secondItem="eay-0h-XY4" secondAttribute="trailing" id="WuP-AN-cui"/>
+                                    <constraint firstItem="Ljf-Rm-zZv" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.1" id="YxY-zl-KD6"/>
+                                    <constraint firstItem="X4F-SE-Lft" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="auj-u1-JcA"/>
+                                    <constraint firstAttribute="trailing" secondItem="osJ-fP-kwy" secondAttribute="trailing" id="cGh-HC-KAo"/>
+                                    <constraint firstAttribute="trailing" secondItem="X4F-SE-Lft" secondAttribute="trailing" id="e5L-Ao-wDa"/>
+                                    <constraint firstItem="4AO-Jx-09v" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="ea9-B9-ab1"/>
+                                    <constraint firstItem="eay-0h-XY4" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="euZ-tg-Cuk"/>
+                                    <constraint firstAttribute="trailing" secondItem="rHv-lS-brc" secondAttribute="trailing" id="ex3-99-Lt5"/>
+                                    <constraint firstItem="rHv-lS-brc" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="fAq-yE-En5"/>
+                                    <constraint firstItem="mgO-Nw-vc1" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="fHF-mC-tdj"/>
+                                    <constraint firstItem="osJ-fP-kwy" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.05" id="jlJ-rC-irq"/>
+                                    <constraint firstAttribute="trailing" secondItem="4AO-Jx-09v" secondAttribute="trailing" id="mNI-kq-Egb"/>
+                                    <constraint firstItem="kcg-4w-sfQ" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.1" id="p3C-L5-2WW"/>
+                                    <constraint firstItem="h7l-tX-aKF" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="q36-EO-pNh"/>
+                                    <constraint firstAttribute="trailing" secondItem="h7l-tX-aKF" secondAttribute="trailing" id="qlr-15-j9i"/>
+                                    <constraint firstAttribute="trailing" secondItem="fnJ-aO-P0h" secondAttribute="trailing" id="rf7-V4-pIE"/>
+                                    <constraint firstItem="fnJ-aO-P0h" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.02" id="s1M-hG-KkX"/>
+                                    <constraint firstItem="Ljf-Rm-zZv" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="tYo-iy-5ty"/>
+                                    <constraint firstItem="kcg-4w-sfQ" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="tcy-hk-K7p"/>
+                                    <constraint firstItem="ukH-Cc-MfW" firstAttribute="leading" secondItem="ncg-ac-cz1" secondAttribute="leading" id="v8b-8c-Gc8"/>
+                                    <constraint firstItem="mgO-Nw-vc1" firstAttribute="height" secondItem="ncg-ac-cz1" secondAttribute="height" multiplier="0.02" id="wx3-sZ-j8g"/>
+                                    <constraint firstAttribute="trailing" secondItem="mgO-Nw-vc1" secondAttribute="trailing" id="zBM-fz-hCM"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ncg-ac-cz1" firstAttribute="leading" secondItem="RAv-iA-eKh" secondAttribute="leading" id="H7M-NX-X2i"/>
+                            <constraint firstAttribute="trailing" secondItem="ncg-ac-cz1" secondAttribute="trailing" id="ULw-SP-pSa"/>
+                            <constraint firstAttribute="bottom" secondItem="ncg-ac-cz1" secondAttribute="bottom" id="joE-3M-AsW"/>
+                            <constraint firstItem="ncg-ac-cz1" firstAttribute="top" secondItem="RAv-iA-eKh" secondAttribute="top" id="rhd-tB-uRK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RAv-iA-eKh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="人の名刺" id="8Ib-fZ-232"/>
@@ -131,147 +334,223 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="sKc-Ri-bjK">
-                                <rect key="frame" x="16" y="96" width="343" height="264"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-99-FyZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="766.66666666666663"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="c8K-f9-pXs">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Iu-c9-aHt" userLabel="View1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="53.666666666666664"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="c8K-f9-pXs" userLabel="Stack View2">
+                                        <rect key="frame" x="0.0" y="53.666666666666671" width="375" height="53.666666666666671"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiV-F4-v2H" userLabel="View2">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-wr-Ib4">
-                                                <rect key="frame" x="0.0" y="0.0" width="238" height="50"/>
+                                                <rect key="frame" x="71" y="0.0" width="45" height="53.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="43e-ha-deP">
-                                                <rect key="frame" x="293" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="171" y="0.0" width="0.0" height="53.666666666666664"/>
                                             </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ays-Y2-Ifx" userLabel="View3">
+                                                <rect key="frame" x="226" y="0.0" width="149" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="bUX-TQ-ZAl"/>
+                                            <constraint firstItem="RiV-F4-v2H" firstAttribute="width" secondItem="c8K-f9-pXs" secondAttribute="width" multiplier="0.0426667" id="18J-hF-6xz"/>
+                                            <constraint firstItem="Ays-Y2-Ifx" firstAttribute="width" secondItem="c8K-f9-pXs" secondAttribute="width" multiplier="0.397333" id="GV6-Fn-dCZ"/>
+                                            <constraint firstItem="43e-ha-deP" firstAttribute="width" secondItem="c8K-f9-pXs" secondAttribute="width" id="Zh0-Vq-6J7"/>
+                                            <constraint firstItem="ZnR-wr-Ib4" firstAttribute="width" secondItem="c8K-f9-pXs" secondAttribute="width" multiplier="0.12" id="ntl-er-kGX"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-Ar-gII">
-                                        <rect key="frame" x="0.0" y="72" width="343" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WN5-m4-trD" userLabel="View14">
+                                        <rect key="frame" x="0.0" y="107.33333333333333" width="375" height="53.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-Ar-gII" userLabel="Stack View3">
+                                        <rect key="frame" x="0.0" y="161" width="375" height="53.666666666666657"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhG-Gu-Au2">
-                                                <rect key="frame" x="0.0" y="0.0" width="238" height="50"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z51-1V-ftx" userLabel="View4">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhG-Gu-Au2">
+                                                <rect key="frame" x="71" y="0.0" width="45" height="53.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tT7-LZ-qEd">
-                                                <rect key="frame" x="293" y="0.0" width="50" height="50"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tT7-LZ-qEd">
+                                                <rect key="frame" x="171" y="0.0" width="0.0" height="53.666666666666664"/>
                                             </imageView>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWF-kw-ebo" userLabel="View5">
+                                                <rect key="frame" x="226" y="0.0" width="149" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="uTg-1E-lev"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="zSZ-gs-rYQ">
-                                        <rect key="frame" x="0.0" y="144" width="343" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTf-r4-mns" userLabel="View15">
+                                        <rect key="frame" x="0.0" y="214.66666666666666" width="375" height="53.666666666666657"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="zSZ-gs-rYQ" userLabel="Stack View4">
+                                        <rect key="frame" x="0.0" y="268.33333333333331" width="375" height="53.666666666666686"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-ov-K6l">
-                                                <rect key="frame" x="0.0" y="0.0" width="238" height="50"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAm-XX-FgI" userLabel="View6">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-ov-K6l">
+                                                <rect key="frame" x="71" y="0.0" width="45" height="53.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-YY-tgq">
-                                                <rect key="frame" x="293" y="0.0" width="50" height="50"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-YY-tgq">
+                                                <rect key="frame" x="171" y="0.0" width="0.0" height="53.666666666666664"/>
                                             </imageView>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7aA-sL-6Os" userLabel="View7">
+                                                <rect key="frame" x="226" y="0.0" width="149" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Wmr-uW-6HR"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-JS-8xt">
-                                        <rect key="frame" x="0.0" y="216" width="343" height="48"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2G-Iy-KdP" userLabel="View16">
+                                        <rect key="frame" x="0.0" y="322" width="375" height="53.666666666666686"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-JS-8xt" userLabel="Stack View5">
+                                        <rect key="frame" x="0.0" y="375.66666666666669" width="375" height="53.666666666666686"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXp-8M-mcK">
-                                                <rect key="frame" x="0.0" y="0.0" width="238" height="48"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajy-dU-V3V" userLabel="View8">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXp-8M-mcK">
+                                                <rect key="frame" x="71" y="0.0" width="45" height="53.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="it7-EI-pz8">
-                                                <rect key="frame" x="293" y="0.0" width="50" height="48"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="it7-EI-pz8">
+                                                <rect key="frame" x="171" y="0.0" width="0.0" height="53.666666666666664"/>
                                             </imageView>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3yh-gg-qfh" userLabel="View9">
+                                                <rect key="frame" x="226" y="0.0" width="149" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-vb-Bpy" userLabel="View17">
+                                        <rect key="frame" x="0.0" y="429.33333333333331" width="375" height="53.666666666666686"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="9uT-T1-icM" userLabel="Stack View6">
+                                        <rect key="frame" x="0.0" y="483" width="375" height="53.666666666666629"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNY-2a-zvd" userLabel="View12">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1J-Ig-GFF">
+                                                <rect key="frame" x="48" y="0.0" width="43" height="53.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                <state key="normal" title="Start">
+                                                    <color key="titleColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="startButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="ifT-Lx-RKP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmV-yw-s6L">
+                                                <rect key="frame" x="123" y="0.0" width="48" height="53.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                <state key="normal" title="Again">
+                                                    <color key="titleColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="againButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="R3I-6p-rzE"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNA-Sr-KP4" userLabel="View13">
+                                                <rect key="frame" x="203" y="0.0" width="172" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6v-Py-yoa" userLabel="View10">
+                                        <rect key="frame" x="0.0" y="536.66666666666663" width="375" height="53.666666666666629"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWn-kb-iBH" userLabel="Stack View7">
+                                        <rect key="frame" x="0.0" y="590.33333333333337" width="375" height="53.666666666666629"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJk-lG-Hsx" userLabel="View18">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPw-4R-AIX">
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="53.666666666666664"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="saveButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="Q7J-Ln-CpP"/>
+                                                    <action selector="saveButton" destination="ZZ5-ds-0gu" eventType="touchUpInside" id="mdI-C4-345"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pa8-8t-RF2" userLabel="View19">
+                                                <rect key="frame" x="39" y="0.0" width="336" height="53.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpe-bT-hRq" userLabel="View11">
+                                        <rect key="frame" x="0.0" y="644" width="375" height="53.666666666666629"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zs-F5-3Zw" userLabel="View12">
+                                        <rect key="frame" x="0.0" y="697.66666666666663" width="375" height="69"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="264" id="4oS-Ts-69z"/>
+                                    <constraint firstItem="Trd-Ar-gII" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="Eg3-bT-ZZw"/>
+                                    <constraint firstItem="5tm-JS-8xt" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="K9b-LT-Yqf"/>
+                                    <constraint firstItem="WN5-m4-trD" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="Npt-NG-4dq"/>
+                                    <constraint firstItem="1Iu-c9-aHt" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="QyB-lA-4Dr"/>
+                                    <constraint firstItem="ZUP-vb-Bpy" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="Wx1-2Z-pex"/>
+                                    <constraint firstItem="M6v-Py-yoa" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="XlB-oT-al3"/>
+                                    <constraint firstItem="9uT-T1-icM" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="aFW-4H-sZQ"/>
+                                    <constraint firstItem="zSZ-gs-rYQ" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="eJa-DH-Hvm"/>
+                                    <constraint firstItem="FTf-r4-mns" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="exs-rk-s50"/>
+                                    <constraint firstItem="i2G-Iy-KdP" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="gJ7-N9-7rn"/>
+                                    <constraint firstItem="c8K-f9-pXs" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="iaB-mp-15L"/>
+                                    <constraint firstItem="YWn-kb-iBH" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="npM-H3-l9B"/>
+                                    <constraint firstItem="Rpe-bT-hRq" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.07" id="qSg-Br-tO9"/>
+                                    <constraint firstItem="4Zs-F5-3Zw" firstAttribute="height" secondItem="Nfe-99-FyZ" secondAttribute="height" multiplier="0.08" id="sSp-Ds-dmy"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="9uT-T1-icM">
-                                <rect key="frame" x="115.66666666666669" y="416" width="144" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1J-Ig-GFF">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Y50-fA-ymc"/>
-                                            <constraint firstAttribute="width" constant="64" id="fkG-Kc-fMr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                        <state key="normal" title="Start">
-                                            <color key="titleColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="ifT-Lx-RKP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmV-yw-s6L">
-                                        <rect key="frame" x="95.999999999999986" y="0.0" width="48.000000000000014" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="mdM-R1-BmW"/>
-                                            <constraint firstAttribute="width" constant="48" id="tDv-30-eyx"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                        <state key="normal" title="Again">
-                                            <color key="titleColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="againButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="R3I-6p-rzE"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="144" id="Goq-xK-EBt"/>
-                                    <constraint firstAttribute="height" constant="40" id="csb-Om-191"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPw-4R-AIX">
-                                <rect key="frame" x="147.66666666666666" y="484" width="80" height="40"/>
-                                <color key="backgroundColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Aae-3C-SQc"/>
-                                    <constraint firstAttribute="height" constant="40" id="tj7-an-U5m"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="saveButton" destination="vIa-Ho-GTL" eventType="touchUpInside" id="Q7J-Ln-CpP"/>
-                                    <action selector="saveButton" destination="ZZ5-ds-0gu" eventType="touchUpInside" id="mdI-C4-345"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sKc-Ri-bjK" firstAttribute="leading" secondItem="Nut-mA-7kB" secondAttribute="leading" constant="16" id="ANy-F7-PrI"/>
-                            <constraint firstItem="Nut-mA-7kB" firstAttribute="trailing" secondItem="sKc-Ri-bjK" secondAttribute="trailing" constant="16" id="Mjb-Pr-4hs"/>
-                            <constraint firstItem="9uT-T1-icM" firstAttribute="centerX" secondItem="IV1-OQ-SeI" secondAttribute="centerX" id="bE2-qO-Bam"/>
-                            <constraint firstItem="Nut-mA-7kB" firstAttribute="bottom" secondItem="nPw-4R-AIX" secondAttribute="bottom" constant="200" id="bKa-Pn-o2r"/>
-                            <constraint firstItem="9uT-T1-icM" firstAttribute="top" secondItem="sKc-Ri-bjK" secondAttribute="bottom" constant="56" id="bg2-Ht-wtB"/>
-                            <constraint firstItem="nPw-4R-AIX" firstAttribute="centerX" secondItem="IV1-OQ-SeI" secondAttribute="centerX" id="g57-QT-gOS"/>
-                            <constraint firstItem="sKc-Ri-bjK" firstAttribute="top" secondItem="Nut-mA-7kB" secondAttribute="top" constant="96" id="oc4-YR-la5"/>
+                            <constraint firstItem="Nfe-99-FyZ" firstAttribute="leading" secondItem="IV1-OQ-SeI" secondAttribute="leading" id="DG8-9v-psD"/>
+                            <constraint firstItem="Nfe-99-FyZ" firstAttribute="top" secondItem="Nut-mA-7kB" secondAttribute="top" id="daN-WV-1GO"/>
+                            <constraint firstAttribute="bottom" secondItem="Nfe-99-FyZ" secondAttribute="bottom" id="eJM-bd-gEL"/>
+                            <constraint firstAttribute="trailing" secondItem="Nfe-99-FyZ" secondAttribute="trailing" id="wlM-Ng-W0U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nut-mA-7kB"/>
                     </view>
@@ -703,7 +982,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自分のQRコード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5L-mx-ivS">
-                                <rect key="frame" x="89.666666666666671" y="84" width="195.66666666666663" height="26"/>
+                                <rect key="frame" x="89.666666666666686" y="84" width="196" height="26"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="26"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.15686274510000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
